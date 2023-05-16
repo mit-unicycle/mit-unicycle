@@ -1,1 +1,5 @@
-site_name: My Docs
+site_name: CS-358 Making Intelligent Things
+
+nav:
+    - Home: 'index.md'
+    - Manufacturing: 'manufacturing.md'
