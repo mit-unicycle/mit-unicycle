@@ -1,6 +1,6 @@
 
 
-![](/images/logo-epfl-1024x576.png)
+![Alt text](images/logo-epfl-1024x576.png)
 
 
 # Manufacturing
@@ -17,7 +17,7 @@ In this section you will find the informations related to the realisation of the
 5. First prototype : motor shaft holder
 6. First prototype : reaction wheel holder
  
-### The reaction wheel and spacers
+## The reaction wheel and spacers
 
 -The reaction wheel : 
 
@@ -42,7 +42,7 @@ The following design shows the dimension you should have for those spacers
 In order to avoid that the belt hits the nuts from the reaction wheel while working, we needed spacer plates to increase the distance between the teethed pulley therefore we designed the spacing plates here bellow is the design and the dimensions of those spacers.
 
 
-### The teethed pulley
+## The teethed pulley
 
 We used GT-2 belts, which necessitated the design of GT-2 pulleys. To achieve this, we employed a functionality in Fusion 360 that enabled us to create parametric designs of the pulleys. This approach facilitated the rapid design of the desired pulley variations and also facilitated testing different gear reduction options. The creation of this design is explained step by steps just bellow
 
@@ -54,16 +54,16 @@ The GT-2 pulley is a type of standard for the teeth of the pulley (or the belts)
 For this printing, the most important setting is the precision, since we are printing the pulley which have small teeth, we need the printing to be as precise as possible
 
 
-### Motor coupler
+## Motor coupler
 
 For the motor coupler we machined them with the tools we had at our diposition which allowed us to create a really good coupler for the motor
 
 
 
-### First prototype : Support plate : 
+## First prototype : Support plate : 
 
 As the first prototype purpose is to balance in one axis of freedom, we needed a plate where we could fit the motor, the ESC, the breadboard and the esp8266. For the first prototype we did all the tests without the batterie mounted.
 
-### First prototype : reaction wheel older : 
+## First prototype : reaction wheel older : 
 
 
