@@ -46,6 +46,10 @@ We used GT-2 belts, which necessitated the design of GT-2 pulleys. To achieve th
 
 The GT-2 pulley is a type of standard for the teeth of the pulley (or the belts), it is defined by the pitch of the teeth of the pulleys. Therefore the parametric design depends on the number of teeth desired for the pulley. In our application the number of teeth needed depends on the reduction we wanted, ( //todo : add the number of teeth we used for the different reductions).
 
+
+
+![](images/GT2%20reduction%207-1.png)
+
 //todo : add parameter list with the explaination of what they correspond to for pulley
 //todo : explain parameters explain step by step the creation of the parametric design 
 
@@ -63,5 +67,11 @@ For the motor coupler we machined them with the tools we had at our diposition w
 As the first prototype purpose is to balance in one axis of freedom, we needed a plate where we could fit the motor, the ESC, the breadboard and the esp8266. For the first prototype we did all the tests without the batterie mounted.
 
 ## First prototype : reaction wheel older : 
+
+
+
+
+
+## Sources of the images
 
 
