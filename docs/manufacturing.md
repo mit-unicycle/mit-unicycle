@@ -25,9 +25,11 @@ In order to achieve the maximum moment of inertia for the reaction wheel, our ob
 
 Our experimentation demonstrated that a wheel with a thin design could easily break if the model were to fall. This is why the model we have implemented here is highly robust and should not break, provided it is used correctly in the application of this project.
 
-//todo : add image and blueprint of the reaction wheel
+![](images/ReactionWheel.png)
+
 
 //todo : add the model of prusa printer we use
+
 The most crucial aspect of printing this part is to use an appropriate perimeter setting. Increasing the perimeter setting enables us to reinforce the piece without significantly increasing the infill. It is essential for the holes where we will insert screws, nuts, and the location where the ball bearing will be placed to be sufficiently strong. This ensures that they do not break during rotation or when inserting the ball bearing. Here we used a perimeter of 4 and an infill of :
 
 
@@ -35,7 +37,9 @@ The most crucial aspect of printing this part is to use an appropriate perimeter
 
 As you will see in the section where the assembly of the model is explained, we required spacers with the same diameter as the inner diameter of the ball bearing to ensure a tight fit between the ball bearings.
 
-The following design shows the dimension you should have for those spacers
+The following design picture shows the dimensions of one of thoses spacers, **note that we used differents size of thoses spacer but we show only one blueprint because the only difference is the heigth**
+
+![Alt text](images/general_spacer.png)
 
 * **The plates spacers :** 
 
