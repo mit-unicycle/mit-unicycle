@@ -1,7 +1,5 @@
 
 
-![Alt text](images/logo-epfl-1024x576.png)
-
 
 # Manufacturing
 
