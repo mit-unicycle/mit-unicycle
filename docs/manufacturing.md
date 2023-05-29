@@ -6,17 +6,28 @@
 
 ## **Preliminaries**
 
-In this section you will find the informations related to the realisation of the 3D designs,the specification about the printing of our parts and the blueprints of the parts. For the designs we used **Fusion 360** and **Prusa 3D printers**. Note that every dimension reported on the blueprint are given in **milimeters (mm)**.
+In this section you will find the informations related to the realisation of the 3D designs,the specification about the printing of our parts and the blueprints of the parts. This section will be separated in **3 parts** : the first presenting the parts that can be used for both one and two axis, then the parts specific to the one axis design and finally the parts for the two axis model. For the designs we used **Fusion 360** and **Prusa 3D printers**. Note that every dimension reported on the blueprint are given in **milimeters (mm)**.
 
-1. The reaction wheel and spacers
-2. The theeted pulleys
-3. The motor coupler
-4. First prototype :
-   1) Main plateform
-   2) Motor shaft holder
-   3) Motor pulley
-   4) Reaction wheel holder
- 
+<ol>
+   <li> <font size = "3"> Common parts : </font></li>
+
+   <ol>
+      <li> The reaction wheel and spacers </li>
+      <li> The teethed pulley </li>
+      <li> The motor coupler</li>
+      <li> The motor pulley</li>
+   </ol>
+
+   <li> <font size = "3"> First prototype : </font> </li>
+   
+   <ol>
+      <li> Main plateorm</li>
+      <li> Motor shaft holder</li>
+      <li> Reaction wheel holder</li>
+   </ol>
+
+</ol> 
+
 ## **1. The reaction wheel and spacers**
 
 * **The reaction wheel :** 
@@ -72,13 +83,19 @@ For the motor coupler, we machined them using the tools available to us. This ap
 
 
 
-## **4. First prototype :** Support plate : 
+## **4. First prototype :** 
 
-As the first prototype purpose is to balance in one axis of freedom, we needed a plate where we could fit the motor, the ESC, the breadboard and the esp8266. For the first prototype we did all the tests without the batterie mounted.
+   <font size = "3">1. Support plate :</font> 
+
+<font size = "3">As the first prototype purpose is to balance in one axis of freedom, we needed a plate where we could fit the motor, the ESC, the breadboard and the esp8266. **Note that for the first prototype we did all the tests without the batterie mounted.** </font>
+
+![Alt text](images/One%20axis%20bottom%20Drawing%20v1-1.png)
+
 
 ## First prototype : reaction wheel older : 
-
-
+ 
+   
+![Alt text](images/One%20axis%20wheel%20holder%20Drawing%20v3-1.png)
 
 
 
