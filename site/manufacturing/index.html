@@ -81,15 +81,7 @@
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-level="2"><a href="#1-the-reaction-wheel-and-spacers" class="nav-link">1. The reaction wheel and spacers</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#2-the-teethed-pulley" class="nav-link">2. The teethed pulley</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#3-motor-coupler" class="nav-link">3. Motor coupler</a>
+            <li class="nav-item" data-level="2"><a href="#1-common-parts" class="nav-link">1. Common parts</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -116,35 +108,35 @@
 <h2 id="preliminaries"><strong>Preliminaries</strong></h2>
 <p>In this section you will find the informations related to the realisation of the 3D designs,the specification about the printing of our parts and the blueprints of the parts. This section will be separated in <strong>3 parts</strong> : the first presenting the parts that can be used for both one and two axis, then the parts specific to the one axis design and finally the parts for the two axis model. For the designs we used <strong>Fusion 360</strong> and <strong>Prusa 3D printers</strong>. Note that every dimension reported on the blueprint are given in <strong>milimeters (mm)</strong>.</p>
 <ol>
-   <li> <font size = "3"> Common parts : </font></li>
-
-   <ol>
-      <li> The reaction wheel and spacers </li>
-      <li> The teethed pulley </li>
-      <li> The motor coupler</li>
-      <li> The motor pulley</li>
-   </ol>
-
-   <li> <font size = "3"> First prototype : </font> </li>
-
-   <ol>
-      <li> Main plateorm</li>
-      <li> Motor shaft holder</li>
-      <li> Reaction wheel holder</li>
-   </ol>
-
-</ol>
-
-<h2 id="1-the-reaction-wheel-and-spacers"><strong>1. The reaction wheel and spacers</strong></h2>
+<li>
+<p><strong>Common parts</strong></p>
 <ul>
-<li><strong>The reaction wheel :</strong> </li>
+<li>1.1 The reaction wheel and the spacers</li>
+<li>1.2 The teethed pulley</li>
+<li>1.3 The motor coupler</li>
+<li>1.4 The motor pulley</li>
+</ul>
+</li>
+<li>
+<p><strong>First prototype</strong></p>
+<ul>
+<li>2.1 Main plateorm</li>
+<li>2.2 Motor shaft holder</li>
+<li>2.3 Reaction wheel holder</li>
+</ul>
+</li>
+</ol>
+<h2 id="1-common-parts"><strong>1. Common parts</strong></h2>
+<h3 id="11-the-reaction-wheel-and-the-spacers">1.1 The reaction wheel and the spacers</h3>
+<ul>
+<li><strong>The reaction wheel</strong></li>
 </ul>
 <p>In order to achieve the maximum moment of inertia for the reaction wheel, our objective was to maximize the diameter of the wheel. Since the moment of inertia is the sum of the squared distances to the mass, the farther the mass is from the axis, the larger the moment will be. However, we faced a constraint due to the size of the printing bed of the printer we used for the distane to the axis.</p>
 <p>Our experimentation demonstrated that a wheel with a thin design could easily break if the model were to fall. This is why the model we have implemented here is highly robust and should not break, provided it is used correctly in the application of this project. <strong>Note that the reaction wheel has 32 holes for the screws used to add weight far from the axis.</strong></p>
 <p><img alt="" src="../images/ReactionWheel.png" /></p>
 <p>The most crucial aspect of printing this part is to use an appropriate perimeter setting. Increasing the perimeter setting enables us to reinforce the piece without significantly increasing the infill. It is essential for the holes where we will insert screws, nuts, and the location where the ball bearing will be placed to be sufficiently strong. This ensures that they do not break during rotation or when inserting the ball bearing. Here we used a perimeter of 4 and an infill of :</p>
 <ul>
-<li><strong>The ball bearing spacers :</strong></li>
+<li><strong>The spacers</strong></li>
 </ul>
 <p>As you can observe in the section explaining the assembly of the model, we needed spacers with the same inner diameter as the ball bearing to ensure a good fit between the ball bearings.</p>
 <p>The accompanying design picture, illustrates the dimensions of one of these spacers. <strong>Please note that we used spacers of various sizes, but we are presenting only one blueprint as the only difference lies in the height of the spacers.</strong>
@@ -154,7 +146,7 @@
 <li><strong>The plates spacers :</strong> </li>
 </ul>
 <p>In order to avoid that the belt hits the nuts from the reaction wheel while working, we needed spacer plates to increase the distance between the teethed pulley therefore we designed the spacing plates here bellow is the design and the dimensions of those spacers.</p>
-<h2 id="2-the-teethed-pulley"><strong>2. The teethed pulley</strong></h2>
+<h3 id="12-the-teethed-pulley"><strong>1.2. The teethed pulley</strong></h3>
 <p>We used GT-2 belts, which necessitated the design of GT-2 pulleys. To achieve this, we employed a functionality in <strong>Fusion 360</strong> that enabled us to create parametric designs of the pulleys. This approach facilitated the rapid design of the desired pulley variations and also facilitated testing different gear reduction options. The creation of this design is explained step by steps just bellow</p>
 <p>The GT-2 pulley follows a specific standard for the teeth, which includes the pitch of the teeth on the pulleys and belts. Therefore, the parametric design of <strong>the pulley size depend on the desired number of teeth</strong>. In our specific application, the number of teeth required is determined by the desired gear reduction.</p>
 <p><img alt="Alt text" src="../images/GT2_7_REDUCTION%20Drawing%20v1-1.png" /></p>
@@ -162,9 +154,10 @@
 //todo : explain parameters explain step by step the creation of the parametric design </p>
 <p>For this particular printing, the most important setting to consider is the <strong>precision</strong>. Given that we are printing pulleys with small teeth, it is essential for the printing to be as accurate and precise as possible. Here we used the option : <strong>10mm Quality</strong> preset from <strong>Prusa Slicer</strong>. To prevent the belt to skip, we need plates to help the belt stay straight in on the pulley, here's the blueprint of thoses plates : </p>
 <p><img alt="Alt text" src="../images/GT2_7_REDUCTION_plates%20Drawing%20v1-1.png" /></p>
-<h2 id="3-motor-coupler"><strong>3. Motor coupler</strong></h2>
+<h3 id="13-motor-coupler"><strong>1.3. Motor coupler</strong></h3>
 <p>For the motor coupler, we machined them using the tools available to us. This approach enabled us to create a high-quality coupler specifically designed for the motor we had. We were unable to find any suitable couplers for purchase online that could be delivered within a reasonable timeframe, which is why we resorted to machining our own. Here's the blueprint we created for this coupler</p>
 <p><img alt="Alt text" src="../images/Metal%20shaft%20coupler%20Drawing%20v3-1.png" /></p>
+<h3 id="14-the-motor-pulley"><strong>1.4. The motor pulley :</strong></h3>
 <h2 id="4-first-prototype"><strong>4. First prototype :</strong></h2>
 <p><font size = "3">1. Support plate :</font> </p>
 <p><font size = "3">As the first prototype purpose is to balance in one axis of freedom, we needed a plate where we could fit the motor, the ESC, the breadboard and the esp8266. <strong>Note that for the first prototype we did all the tests without the batterie mounted.</strong> </font></p>
