@@ -6,7 +6,7 @@
 
 ## **Preliminaries**
 
-In this section you will find the informations related to the realisation of the 3D designs,the specification about the printing of our parts and the blueprints of the parts. This section will be separated in **3 parts** : the first presenting the parts that can be used for both one and two axis, then the parts specific to the one axis design and finally the parts for the two axis model. For the designs we used **Fusion 360** and **Prusa 3D printers**. Note that every dimension reported on the blueprint are given in **milimeters (mm)**.
+In this section you will find the information related to the realization of the 3D designs,the specification about the printing of our parts and the blueprints of the parts. This section will be separated in **3 parts** : the first presenting the parts that can be used for both one and two axis, then the parts specific to the one axis design and finally the parts for the two axis model. For the designs we used **Fusion 360** and **Prusa 3D printers**. Note that every dimension reported on the blueprint are given in **millimeters (mm)**.
 
 1. **Common parts**
 
@@ -17,7 +17,7 @@ In this section you will find the informations related to the realisation of the
 
 
 2. **First prototype**
-    - 2.1 Main plateorm
+    - 2.1 Main platform
     - 2.2 Motor shaft holder
     - 2.3 Reaction wheel holder
 
@@ -28,7 +28,7 @@ In this section you will find the informations related to the realisation of the
 
 * **The reaction wheel**
 
-In order to achieve the maximum moment of inertia for the reaction wheel, our objective was to maximize the diameter of the wheel. Since the moment of inertia is the sum of the squared distances to the mass, the farther the mass is from the axis, the larger the moment will be. However, we faced a constraint due to the size of the printing bed of the printer we used for the distane to the axis.
+In order to achieve the maximum moment of inertia for the reaction wheel, our objective was to maximize the diameter of the wheel. Since the moment of inertia is the sum of the squared distances to the mass, the farther the mass is from the axis, the larger the moment will be. However, we faced a constraint due to the size of the printing bed of the printer we used for the distance to the axis.
 
 Our experimentation demonstrated that a wheel with a thin design could easily break if the model were to fall. This is why the model we have implemented here is highly robust and should not break, provided it is used correctly in the application of this project. **Note that the reaction wheel has 32 holes for the screws used to add weight far from the axis.**
 
@@ -62,16 +62,16 @@ The GT-2 pulley follows a specific standard for the teeth, which includes the pi
 ![Alt text](images/GT2_7_REDUCTION%20Drawing%20v1-1.png)
 
 
-//todo : add parameter list with the explaination of what they correspond to for pulley
+//todo : add parameter list with the explanation of what they correspond to for pulley
 //todo : explain parameters explain step by step the creation of the parametric design 
 
-For this particular printing, the most important setting to consider is the **precision**. Given that we are printing pulleys with small teeth, it is essential for the printing to be as accurate and precise as possible. Here we used the option : **10mm Quality** preset from **Prusa Slicer**. To prevent the belt to skip, we need plates to help the belt stay straight in on the pulley, here's the blueprint of thoses plates : 
+For this particular printing, the most important setting to consider is the **precision**. Given that we are printing pulleys with small teeth, it is essential for the printing to be as accurate and precise as possible. Here we used the option : **10mm Quality** preset from **Prusa Slicer**. To prevent the belt to skip, we need plates to help the belt stay straight in on the pulley, here's the blueprint of those plates : 
 
 ![Alt text](images/GT2_7_REDUCTION_plates%20Drawing%20v1-1.png)
 
 ### **1.3. Motor coupler**
 
-For the motor coupler, we machined them using the tools available to us. This approach enabled us to create a high-quality coupler specifically designed for the motor we had. We were unable to find any suitable couplers for purchase online that could be delivered within a reasonable timeframe, which is why we resorted to machining our own. Here's the blueprint we created for this coupler
+For the motor coupler, we machined them using the tools available to us. This approach enabled us to create a high-quality coupler specifically designed for the motor we had. We were unable to find any suitable couplers for purchase online that could be delivered within a reasonable time frame, which is why we resorted to machining our own. Here's the blueprint we created for this coupler
 
 ![Alt text](images/Metal%20shaft%20coupler%20Drawing%20v3-1.png)
 
@@ -82,7 +82,7 @@ For the motor coupler, we machined them using the tools available to us. This ap
 
    <font size = "3">1. Support plate :</font> 
 
-<font size = "3">As the first prototype purpose is to balance in one axis of freedom, we needed a plate where we could fit the motor, the ESC, the breadboard and the esp8266. **Note that for the first prototype we did all the tests without the batterie mounted.** </font>
+<font size = "3">As the first prototype purpose is to balance in one axis of freedom, we needed a plate where we could fit the motor, the ESC, the breadboard and the esp8266. **Note that for the first prototype we did all the tests without the battery mounted.** </font>
 
 ![Alt text](images/One%20axis%20bottom%20Drawing%20v1-1.png)
 
