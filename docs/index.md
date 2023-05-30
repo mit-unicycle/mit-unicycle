@@ -3,7 +3,7 @@
 
 ## Index
 1. Building the Prototype
-    - 1.1 [Underlying Physics](buidling/physics.md)
+    - 1.1 [Underlying Physics](building/physics.md)
     - 1.2 [Components Used](building/components.md)
     - 1.3 [Manufacturing](building/manufacturing.md)
     - 1.4 [Assembly Instructions](building/assembly.md)
