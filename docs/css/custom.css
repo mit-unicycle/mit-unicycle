@@ -37,6 +37,11 @@ footer {
     transform: translateX(-50%);
 }
 
+.video-container {
+    display: flex;
+    justify-content: space-around;
+}
+
 .content p {
     text-align: justify;
 }
