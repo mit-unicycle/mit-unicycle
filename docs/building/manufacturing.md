@@ -108,7 +108,7 @@ For the motor coupler, we machined them using the tools available to us. This ap
 
 To do the gear reduction we wanted we needed to fix a small teethed pulley to the motor coupler. We needed this pulley to be small enough to avoid printing enormous pulley if we wanted to modify the gears reduction. Increasing the reduction means modifying the height of the reaction wheel it could also mean buying new belts if the diameter of the pulley is too big. The minimum diameter of the pulley (which is in fact a constraint on the number of teeth) is limited by the screwholes position of the motor coupler. 
 
-//todo : add the function that allows to calculate the radius of the pulley
+//todo : add the function that allows to calculate the radius of the pulley test
 
 **! again there is no informations about the pulley's diameter on the blueprint since it depends on the number of teeth !**
 
