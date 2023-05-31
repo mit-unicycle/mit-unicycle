@@ -45,7 +45,7 @@ Then the R3 parameter if the tooth radius, in the case of the design of the pull
 
 The parameter P is really important since it is the distance between two teeth (**in mm**). Therefore the diameter is defined by : (P*N)/Pi, with N, the number of teeth we want, therefore by doing basic algebra we can find the perimeter of such a pulley as a function of N and P.
 
-![Alt text](images/belt-tolerence.jpg)
+![Alt text](../images/belt-tolerence.jpg)
 
  * **How to create the parametric design using fusion parametric design option ?**
 
@@ -100,13 +100,9 @@ For this particular printing, the most important setting to consider is the **pr
 
 For the motor coupler, we machined them using the tools available to us. This approach enabled us to create a high-quality coupler specifically designed for the motor we had. We were unable to find any suitable couplers for purchase online that could be delivered within a reasonable time frame, which is why we resorted to machining our own. Here's the blueprint we created for this coupler
 
-<<<<<<< HEAD
 //todo : modify drawing, 3mm of thickness
 
-![Alt text](images/Metal%20shaft%20coupler%20Drawing%20v3-1.png)
-=======
 ![Alt text](../images/Metal%20shaft%20coupler%20Drawing%20v3-1.png)
->>>>>>> 8a57fa1 (Added dracula theme)
 
 ### **1.4. The motor pulley :**
 
@@ -116,7 +112,7 @@ To do the gear reduction we wanted we needed to fix a small teethed pulley to th
 
 **! again there is no informations about the pulley's diameter on the blueprint since it depends on the number of teeth !**
 
-![Alt text](images/Motor%20pulley%20Drawing%20v1-1.png)
+![Alt text](../images/Motor%20pulley%20Drawing%20v1-1.png)
 
 ## **2. First prototype :** 
 
