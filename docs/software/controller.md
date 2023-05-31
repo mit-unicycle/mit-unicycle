@@ -6,7 +6,7 @@ To have a better ease of use and comprehension of the software, it is important 
 
 To control the speed of rotation of the wheel, we use control loop called _Proportional-Integral-Derivative Controller_ or _PID Controller_ for short. In the image below, we can see an overview of this controller: 
 
-![PID Controller Overview](../images/pid_overview.png)
+![PID Controller Overview](../images/pid_diagram.png)
  
 - $r(t) =$ Setpoint (SP)
 - $u(t) =$ Control Variable
