@@ -69,3 +69,4 @@ As the name suggests, the channel derives the error w.r.t time. Thus, the contro
 As the robot approaches the SP, the error decreases and the derivative is then negative. Therefore, when adding all of the channels together, the derivative term will counteract the other channels to adjust the rotational speed in advance. 
 
 In brief, the proportional channel will try to close the gap between the SP and the current position; the integral channel will fix the error that the proportional did not manage to; and finally, the derivative path will counterbalance the other two to help it stabilize faster. In conjunction, the three channels work together to keep the robot in balance. 
+
