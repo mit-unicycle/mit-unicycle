@@ -6,14 +6,14 @@ To have a better ease of use and comprehension of the software, it is important 
 
 To control the speed of rotation of the wheel, we use control loop called _Proportional-Integral-Derivative Controller_ or _PID Controller_ for short. In the image below, we can see an overview of this controller: 
 
-![PID Controller Overview](images/pid_controller.jpg)
+![PID Controller Overview](/mit-unicycle/images/pid_controller.jpg)
  
 - $r(t) =$ Setpoint (SP)
 - $u(t) =$ Control Variable
 - $y(t) =$ Process Variable
 - $e(t) =$ Error Variable
 
-Such a controller works in the following way. First, a _setpoint (SP)_ is chosen. The SP is the desired position that the robot should achieve. In our case, it would correspond to a small roll angle. If the angle is small, it means that the robot is in balance. Note that in an ideal world, the SP would be $0°$. However, since the weight of the robot is not perfectly distributed, the $r(t) \in \left\{ -5°, 5 \right\}$. Later, we will also explain how and why we must adjust the SP dynamically to achieve greater stability. 
+Such a controller works in the following way. First, a _setpoint (SP)_ is chosen. The SP is the desired position that the robot should achieve. In our case, it would correspond to a small roll angle. If the angle is small, it means that the robot is in balance. Note that in an ideal world, the SP would be $0°$. However, since the weight of the robot is not perfectly distributed, the $r(t) \in \left\{ -5°, 5 \right\}$. Later, we will also explain how and why we must adjust the SP dynamically to achieve greater stability.
 
 Then, the controller computes the _error variable_:
 
