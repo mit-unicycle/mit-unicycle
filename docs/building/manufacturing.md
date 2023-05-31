@@ -59,7 +59,7 @@ In order to achieve the maximum moment of inertia for the reaction wheel, our ob
 
 Our experimentation demonstrated that a wheel with a thin design could easily break if the model were to fall. This is why the model we have implemented here is highly robust and should not break, provided it is used correctly in the application of this project. **Note that the reaction wheel has 32 holes for the screws used to add weight far from the axis.**
 
-![](images/ReactionWheel.png)
+![](../images/ReactionWheel.png)
 
 
 
@@ -73,7 +73,7 @@ As you can observe in the section explaining the assembly of the model, we neede
 The accompanying design picture, illustrates the dimensions of one of these spacers. **Please note that we used spacers of various sizes, but we are presenting only one blueprint as the only difference lies in the height of the spacers.**
 //todo add the list of size of the spacer we use
 
-![Alt text](images/general_spacer.png)
+![Alt text](../images/general_spacer.png)
 
 * **The plates spacers :** 
 
@@ -86,7 +86,7 @@ We used GT-2 belts, which necessitated the design of GT-2 pulleys. To achieve th
 
 The GT-2 pulley follows a specific standard for the teeth, which includes the pitch of the teeth on the pulleys and belts. Therefore, the parametric design of **the pulley size depend on the desired number of teethAlt text that's why there is no informations about the diamater of the pulley**. In our specific application, the number of teeth required is determined by the desired gear reduction.
 
-![Alt text](images/GT2_7_REDUCTION%20Drawing%20v1-1.png)
+![Alt text](../images/GT2_7_REDUCTION%20Drawing%20v1-1.png)
 
 
 //todo : add parameter list with the explanation of what they correspond to for pulley
@@ -94,15 +94,19 @@ The GT-2 pulley follows a specific standard for the teeth, which includes the pi
 
 For this particular printing, the most important setting to consider is the **precision**. Given that we are printing pulleys with small teeth, it is essential for the printing to be as accurate and precise as possible. Here we used the option : **10mm Quality** preset from **Prusa Slicer**. To prevent the belt to skip, we need plates to help the belt stay straight in on the pulley, here's the blueprint of those plates : 
 
-![Alt text](images/GT2_7_REDUCTION_plates%20Drawing%20v1-1.png)
+![Alt text](../images/GT2_7_REDUCTION_plates%20Drawing%20v1-1.png)
 
 ### **1.3. Motor coupler**
 
 For the motor coupler, we machined them using the tools available to us. This approach enabled us to create a high-quality coupler specifically designed for the motor we had. We were unable to find any suitable couplers for purchase online that could be delivered within a reasonable time frame, which is why we resorted to machining our own. Here's the blueprint we created for this coupler
 
+<<<<<<< HEAD
 //todo : modify drawing, 3mm of thickness
 
 ![Alt text](images/Metal%20shaft%20coupler%20Drawing%20v3-1.png)
+=======
+![Alt text](../images/Metal%20shaft%20coupler%20Drawing%20v3-1.png)
+>>>>>>> 8a57fa1 (Added dracula theme)
 
 ### **1.4. The motor pulley :**
 
@@ -120,14 +124,14 @@ To do the gear reduction we wanted we needed to fix a small teethed pulley to th
 
 <font size = "3">As the first prototype purpose is to balance in one axis of freedom, we needed a plate where we could fit the motor, the ESC, the breadboard and the esp8266. **Note that for the first prototype we did all the tests without the battery mounted.** </font>
 
-![Alt text](images/One%20axis%20bottom%20Drawing%20v1-1.png)
+![Alt text](../images/One%20axis%20bottom%20Drawing%20v1-1.png)
 
 
 ## First prototype : reaction wheel older : 
  
 The part here bellow is designed to hold the threaded rod to hold the reaction wheel.
    
-![Alt text](images/One%20axis%20wheel%20holder%20Drawing%20v3-1.png)
+![Alt text](../images/One%20axis%20wheel%20holder%20Drawing%20v3-1.png)
 
 
 

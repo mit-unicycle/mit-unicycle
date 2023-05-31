@@ -2,10 +2,45 @@ article {
     position: relative;
     left: 50%;
     transform: translateX(-50%);
-    max-width: 70rem;
+    max-width: 60rem;
 }
 
 footer {
     display: none;
 }
 
+.tl-inner-radius  {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+}
+
+.tl-inner-radius div {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.tl-inner-radius div:first-child {
+    background-color: var(--purple);
+}
+
+.tl-inner-radius div:last-child {
+    background-color: var(--blackSecondary);
+    border-top-left-radius: 100%;
+}
+
+.content img {
+    max-width: 60%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.content p {
+    text-align: justify;
+}
+
+.content iframe[src~="youtube.com"] {
+    width: 100%;
+}
