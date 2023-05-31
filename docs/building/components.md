@@ -38,3 +38,4 @@ This motor was an excellent choice for our robot for the following reasons. It i
 ![FSESC](../images/FSEC.png)
 
 The FSESC 4.12 is an excellent motor driver that is often used in electric skateboards, bikes and many more applications. It ships with a [software](https://vesc-project.com/vesc_tool) to extensively tune the behavior of the ESC. Moreover, it is possible to connect the motor's hall sensors to it, allowing for very precise control at all speeds.
+

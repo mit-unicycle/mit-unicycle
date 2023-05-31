@@ -1,8 +1,22 @@
-site_name: CS-358 Making Intelligent Things
+site_name: CS-358 Self Balancing Robots
 
 nav:
     - Home: 'index.md'
-    - Manufacturing: 'manufacturing.md'
+    - Building the Prototype :
+      - Underlying Physics: 'building/physics.md'
+      - Components Used : 'building/components.md'
+      - Manufacturing: 'building/manufacturing.md'
+      - Assembly Instructions : 'building/assembly.md'
+      - Wiring Instructions : 'building/wiring.md'
+    - Process :
+      - Challenges Faced: 'process/challenges.md'
+      - Future Improvements : 'process/improvements.md'
+      - Conclusion: 'process/conclusion.md'      
+    - Software Instructions :
+      - Controller Explanation: 'software/controller.md'
+      - Software Environment Setup : 'software/setup.md'
+      - Software Usage: 'software/usage.md'
+      - Tuning Guide : 'software/tuning.md'
 
 extra_javascript:
   - javascript/katex.js 
@@ -14,5 +28,27 @@ extra_css:
   - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.css
 
 theme:
-  name: dracula
+  name: material
   custom_dir: docs/custom-theme/
+
+  features:
+    - navigation.instant
+
+  palette:
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
+markdown_extensions:
+    - toc:
+        permalink: ""
