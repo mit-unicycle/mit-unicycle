@@ -6,7 +6,7 @@ To have a better ease of use and comprehension of the software, it is important 
 
 To control the speed of rotation of the wheel, we use control loop called _Proportional-Integral-Derivative Controller_ or _PID Controller_ for short. In the image below, we can see an overview of this controller: 
 
-![PID Controller Overview](../images/pid_controller.jpg)
+![PID Controller Overview](../images/pid_diagram.png)
  
 - $r(t) =$ Setpoint (SP)
 - $u(t) =$ Control Variable
@@ -51,3 +51,5 @@ Let us suppose that we set $K_{p} = 20$ and we reduced the error to $e(t) = 5^{\
 ![Current Situation](images/integral.jpg)
 
 Although the motor is already spinning at 100 RPM, the error $e(t)$ has not yet been reduced to $0^{\circ}$. This is where the **integral channel** comes in. 
+
+Suppose now that the motor stays holds its position for a few milliseconds.
