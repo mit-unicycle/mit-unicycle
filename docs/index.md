@@ -1,27 +1,6 @@
 # Reaction Wheel Robot Project
 
-
-## Index
-1. Building the Prototype
-    - 1.1 [Underlying Physics](building/physics.md)
-    - 1.2 [Components Used](building/components.md)
-    - 1.3 [Manufacturing](building/manufacturing.md)
-    - 1.4 [Assembly Instructions](building/assembly.md)
-    - 1.5 [Wiring Instructions](building/wiring.md)
-
-2. Software Instructions
-    - 2.1 [Controller Explanation](software/controller.md)
-    - 2.2 [Software Environment Setup](software/setup.md)
-    - 2.3 [Software Usage](software/usage.md)
-    - 2.4 [Tuning Guide](software/tuning.md)
-
-3. Process
-    - 3.1 [Challenges Faced](process/challenges.md)
-    - 3.2 [Future Improvements](process/improvements.md)
-    - 3.3 [Conclusion](process/conclusion.md)
-
 ## Introduction
-
 Welcome to the EPFL Reaction Wheel Robot Project which was realized by a team of 5 Computer Science students during the 2023 summer semester. 
 Through this complete documentation, we will guide you through the manufacturing and software development process of the robot.
 
