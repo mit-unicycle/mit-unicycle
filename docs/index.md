@@ -22,7 +22,10 @@
 
 ## Introduction
 
-Welcome to the EPFL Reaction Wheel Robot Project which was realized by a team of 5 Computer Science students during the 2023 summer semester. Through this complete documentation, we will guide you through the manufacturing and software installation process of the robot. We will also provide you with a detailed description of the software architecture and the different components of the robot, empowering you to further develop the prototype and add new features to it.
+Welcome to the EPFL Reaction Wheel Robot Project which was realized by a team of 5 Computer Science students during the 2023 summer semester. 
+Through this complete documentation, we will guide you through the manufacturing and software development process of the robot.
+
+You can find all of the code and the CAD designs we used here: <a href="https://github.com/mit-unicycle ">github.com/mit-unicycle</a>
 
 <div class="video-container">
     <iframe width="810" height="456" src="https://www.youtube.com/embed/MygkXkl1ay0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
