@@ -48,6 +48,6 @@ On a first glance, this seems enough. However, looking closely, we notice that n
 
 Let us suppose that we set $K_{p} = 20$ and we reduced the error to $e(t) = 5^{\circ}$:
 
-![Current Situation](images/integral.jpg)
+![Current Situation](../images/integral.jpg)
 
 Although the motor is already spinning at 100 RPM, the error $e(t)$ has not yet been reduced to $0^{\circ}$. This is where the **integral channel** comes in. 
