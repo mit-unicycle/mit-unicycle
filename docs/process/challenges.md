@@ -10,3 +10,6 @@ Throughout the eight weeks of working in these project, we faced many challenges
 
 ## Dynamically Shifting the Setpoint
 
+## Collaboration
+
+For many of us, this was the first time working on such a big project and with so many team members. As such, collaboration was a a significant challenge right from the beginning.
