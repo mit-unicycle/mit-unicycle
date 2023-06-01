@@ -45,6 +45,7 @@ In this section you will find the information related to the realization of the 
 
 4. **Second prototype :** 
     - 4.1 Main platform
+    - 4.1 Main platform
 
     - 4.2 The Stick 
 
@@ -82,6 +83,9 @@ $$ N = \frac{D \pi}{P}$$
 **To create a parametric design for a GT2 pulley, you can refer to the video tutorial mentioned. It provides a helpful guide to follow and assists in achieving the desired outcome :**
 **To create a parametric design for a GT2 pulley, you can refer to the video tutorial mentioned. It provides a helpful guide to follow and assists in achieving the desired outcome :**
 
+<div style="text-align:center">
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/PDNIiLSTzG4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+</div>
 <div style="text-align:center">
   <iframe width="560" height="315" src="https://www.youtube.com/embed/PDNIiLSTzG4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 </div>
@@ -147,11 +151,6 @@ For the motor coupler, we machined them using the tools available to us. This ap
 To do the gear reduction we wanted we needed to fix a small teethed pulley to the motor coupler. We needed this pulley to be small enough to avoid printing enormous pulley if we wanted to modify the gears reduction. Increasing the reduction means modifying the height of the reaction wheel it could also mean buying new belts if the diameter of the pulley is too big. The minimum diameter of the pulley (which is in fact a constraint on the number of teeth) is limited by the screws holes position of the motor coupler. 
 
 ![Alt text](../images/Manufacturing_images/Metal%20shaft%20coupler%20Drawing%20v3-1.png)
-
-When used on the first prototype you need to insert a ball bearing, but you don't if you only use it for the two axis prototype.
-
-
-## **3. First prototype :** 
 
 
 ### **3.1 One axis bottom :**
