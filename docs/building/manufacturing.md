@@ -143,14 +143,13 @@ For the motor coupler, we machined them using the tools available to us. This ap
 
 To do the gear reduction we wanted we needed to fix a small teethed pulley to the motor coupler. We needed this pulley to be small enough to avoid printing enormous pulley if we wanted to modify the gears reduction. Increasing the reduction means modifying the height of the reaction wheel it could also mean buying new belts if the diameter of the pulley is too big. The minimum diameter of the pulley (which is in fact a constraint on the number of teeth) is limited by the screws holes position of the motor coupler. 
 
-![Alt text](../images/Manufacturing_images/Motor_pulley.png)
-
-## **3. First prototype :** 
 
 
-### **3.1. One axis bottom plate :**
 
 
+![Alt text](../images/Manufacturing_images/Metal%20shaft%20coupler%20Drawing%20v3-1.png)
+
+## **3. The first prototype:**
 
 
 As the first prototype purpose is to balance in one axis of freedom, we needed a plate where we could fit the motor, the ESC, the breadboard and the esp8266. **Note that for the first prototype we did all the tests without the battery mounted.**
