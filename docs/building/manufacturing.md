@@ -150,7 +150,9 @@ P**lease note that for the two-axis design, we did not use a specific piece for 
 
 ### **3.3 reaction wheel support :** 
  
+
 The part here bellow is designed to hold the threaded rod to hold the reaction wheel.
+
    
 ![Alt text](../images/Manufacturing_images/Reaction_wheel_support.png)
 
