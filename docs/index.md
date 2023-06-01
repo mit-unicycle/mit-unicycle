@@ -4,7 +4,11 @@
 Welcome to the EPFL Reaction Wheel Robot Project which was realized by a team of 5 Computer Science students during the 2023 summer semester. 
 Through this complete documentation, we will guide you through the manufacturing and software development process of the robot.
 
-You can find all of the code and the CAD designs we used here: <a href="https://github.com/mit-unicycle ">github.com/mit-unicycle</a>
+You can find all of the code and the CAD designs we used here: <a href="https://github.com/mit-unicycle ">github.com/mit-unicycle</a> </br>
+Here are the Notion Pages we used to store information: 
+    <a href="https://summer-espadrille-b76.notion.site/Items-to-buy-a39584837b4b4c01937789933fe2feb7">Items to buy</a> ,
+    <a href="https://summer-espadrille-b76.notion.site/373cf709cd534d39bf88407b930a165b?v=a52da7a304df4a25abab6df019da81b1">Design</a> , 
+    <a href="https://summer-espadrille-b76.notion.site/b2048f4cb776428da3f5c4c3cff9b32a?v=64331302bfdf44a6abfef367b66ab922">Setup guides</a>
 
 <div class="video-container">
     <iframe width="810" height="456" src="https://www.youtube.com/embed/MygkXkl1ay0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
