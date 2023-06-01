@@ -195,7 +195,7 @@ To achieve the composition of materials, we programmed a color change during the
  * Perimeters : 2
  * Top solid layers : 4
 
- **Considering that this is a small print, leaving the top solid layer unaltered would have resulted in a denser and less flexible top portion. By modifying the top solid layer, we were able to achieve the desired level of flexibility and meet our specific requirements for the print.**
+ **Considering that this is a small print, leaving the top solid layer unaltered would have reTosulted in a denser and less flexible top portion. By modifying the top solid layer, we were able to achieve the desired level of flexibility and meet our specific requirements for the print.**
 
 
 
