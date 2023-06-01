@@ -65,6 +65,20 @@ $$ N = \frac{D \pi}{P}$$
 ![Alt text](../images/belt-tolerence.jpg)
 
  * **How to create the parametric design using fusion parametric design option ?**
+=======
+1. **Common parts**
+
+    - 1.1 The reaction wheel and the spacers
+    - 1.2 The teethed pulley
+    - 1.3 The motor coupler
+    - 1.4 The motor pulley
+
+
+2. **First prototype**
+    - 2.1 Main platform
+    - 2.2 Motor shaft holder
+    - 2.3 Reaction wheel holder
+
 
 ## **2. Common parts**
 
@@ -103,7 +117,7 @@ In order to avoid that the belt hits the nuts from the reaction wheel while work
 
 We used GT-2 belts, which necessitated the design of GT-2 pulleys. To achieve this, we employed a functionality in **Fusion 360** that enabled us to create parametric designs of the pulleys. This approach facilitated the rapid design of the desired pulley variations and also facilitated testing different gear reduction options. The creation of this design is explained step by steps just bellow
 
-The GT-2 pulley follows a specific standard for the teeth, which includes the pitch of the teeth on the pulleys and belts. Therefore, the parametric design of **the pulley size depend on the desired number of teethAlt text that's why there is no informations about the diamater of the pulley**. In our specific application, the number of teeth required is determined by the desired gear reduction.
+The GT-2 pulley follows a specific standard for the teeth, which includes the pitch of the teeth on the pulleys and belts. Therefore, the parametric design of **the pulley size depend on the desired number of teeth**. In our specific application, the number of teeth required is determined by the desired gear reduction.
 
 ![Alt text](../images/Manufacturing_images/GT-2_7_reduc_pulley.png)
 
@@ -117,13 +131,12 @@ For this particular printing, the most important setting to consider is the **pr
 
 For the motor coupler, we machined them using the tools available to us. This approach enabled us to create a high-quality coupler specifically designed for the motor we had. We were unable to find any suitable couplers for purchase online that could be delivered within a reasonable time frame, which is why we resorted to machining our own. Here's the blueprint we created for this coupler
 
-//todo : modify drawing, 3mm of thickness
-
 ![Alt text](../images/Metal%20shaft%20coupler%20Drawing%20v3-1.png)
 
 ### **2.4. The motor pulley :**
 
 To do the gear reduction we wanted we needed to fix a small teethed pulley to the motor coupler. We needed this pulley to be small enough to avoid printing enormous pulley if we wanted to modify the gears reduction. Increasing the reduction means modifying the height of the reaction wheel it could also mean buying new belts if the diameter of the pulley is too big. The minimum diameter of the pulley (which is in fact a constraint on the number of teeth) is limited by the screws holes position of the motor coupler. 
+
 
 ![Alt text](../images/Manufacturing_images/Motor_pulley.png)
 
@@ -131,6 +144,11 @@ To do the gear reduction we wanted we needed to fix a small teethed pulley to th
 
 
 ### **3.1. One axis bottom plate :**
+=======
+//todo : add the function that allows to calculate the radius of the pulley test
+
+## **4. First prototype :** 
+
 
 As the first prototype purpose is to balance in one axis of freedom, we needed a plate where we could fit the motor, the ESC, the breadboard and the esp8266. **Note that for the first prototype we did all the tests without the battery mounted.**
 
@@ -144,7 +162,6 @@ As the first prototype purpose is to balance in one axis of freedom, we needed a
 
 ### **3.3 reaction wheel support :** 
  
-The part here bellow is designed to hold the threaded rod to hold the reaction wheel.
    
 ![Alt text](../images/Manufacturing_images/Reaction_wheel_support.png)
 
@@ -193,8 +210,5 @@ To achieve the composition of materials, we programmed a color change during the
 
 
 ## Sources of the images
-
-GT pulley informations taken from : https://openbuildspartstore.com/ 
-
 
 
