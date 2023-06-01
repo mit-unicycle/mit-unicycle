@@ -33,6 +33,10 @@ theme:
 
   features:
     - navigation.instant
+    - header.autohide
+    
+  icon:
+      repo: fontawesome/brands/github
 
   palette:
     # Palette toggle for light mode
@@ -49,6 +53,5 @@ theme:
         icon: material/brightness-4
         name: Switch to light mode
 
-markdown_extensions:
-    - toc:
-        permalink: ""
+repo_url: https://github.com/mit-unicycle
+repo_name: mit-unicycle
