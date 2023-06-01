@@ -30,7 +30,7 @@ In this section you will find the information related to the realization of the 
     - 3.3 Reaction wheel holder
 
 4. **Second prototype :** 
-    - 4.1 Main plateform
+    - 4.1 Main platform
 
     - 4.2 The Stick 
 
@@ -44,6 +44,8 @@ In this section you will find the information related to the realization of the 
  * **What is a GT-2 pulley ?**
 
 A GT-2 pulley is a type of standard for belts and pulleys, it is defined mostly by the pitch of the teeth and the distance between the edges of two teeth. Here's the description of the parameters we're interested in for designing the teethed pulley.
+
+![Alt text](../images/Manufacturing_images/belt-tolerence.jpg)
 
 * the parameter R1 correspond to the inner pitch of the teeth of our pulley, we can think about it as if we small circles of this diameter at the same position at both side of one of the pulley's teeth.
 
@@ -62,27 +64,17 @@ If we still want to be able to "choose" the diameter, then with basic algebra fi
 $$ N = \frac{D \pi}{P}$$
 
 
-![Alt text](../images/belt-tolerence.jpg)
 
- * **How to create the parametric design using fusion parametric design option ?**
-=======
-1. **Common parts**
+To create a parametric design for a GT2 pulley, you can refer to the video tutorial mentioned. It provides a helpful guide to follow and assists in achieving the desired outcome : 
 
-    - 1.1 The reaction wheel and the spacers
-    - 1.2 The teethed pulley
-    - 1.3 The motor coupler
-    - 1.4 The motor pulley
-
-
-2. **First prototype**
-    - 2.1 Main platform
-    - 2.2 Motor shaft holder
-    - 2.3 Reaction wheel holder
+<div style="text-align:center">
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/PDNIiLSTzG4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+</div>
 
 
 ## **2. Common parts**
 
-### 2.1 The reaction wheel and the spacers 
+### **2.1 The reaction wheel and the spacers**
 
 * **The reaction wheel**
 
@@ -92,8 +84,6 @@ Our experimentation demonstrated that a wheel with a thin design could easily br
 
 ![Alt text](../images/Manufacturing_images/ReactionWheel.png)
 
-
-
 The most crucial aspect of printing this part is to use an appropriate perimeter setting. Increasing the perimeter setting enables us to reinforce the piece without significantly increasing the infill. It is essential for the holes where we will insert screws, nuts, and the location where the ball bearing will be placed to be sufficiently strong. This ensures that they do not break during rotation or when inserting the ball bearing. Here we used a perimeter of 4 and an infill of :
 
 
@@ -101,9 +91,9 @@ The most crucial aspect of printing this part is to use an appropriate perimeter
 
 As you can observe in the section explaining the assembly of the model, we needed spacers with the same inner diameter as the ball bearing to ensure a good fit between the ball bearings.
 
-The accompanying design picture, illustrates the dimensions of one of these spacers. **Please note that we used spacers of various sizes, because the length of those depend on the number of spacing plates used, but we are presenting only one blueprint as the only difference lies in the height of the spacers.**
+The accompanying design picture, illustrates the dimensions of one of these spacers. **Please note that we used spacers of various sizes, because the length of those depend on the number of spacing plates used, but we are presenting only one blueprint as the only difference lies in the height of the spacers. We used 9mm spacers, but since it's really small parts you can try to print different sized spacers.**
 
-//todo add the list of size of the spacer we use
+
 
 ![Alt text](../images/Manufacturing_images/general_spacer.png)
 
@@ -137,15 +127,8 @@ For the motor coupler, we machined them using the tools available to us. This ap
 
 To do the gear reduction we wanted we needed to fix a small teethed pulley to the motor coupler. We needed this pulley to be small enough to avoid printing enormous pulley if we wanted to modify the gears reduction. Increasing the reduction means modifying the height of the reaction wheel it could also mean buying new belts if the diameter of the pulley is too big. The minimum diameter of the pulley (which is in fact a constraint on the number of teeth) is limited by the screws holes position of the motor coupler. 
 
+![Alt text](../images/Manufacturing_images/Metal%20shaft%20coupler%20Drawing%20v3-1.png)
 
-![Alt text](../images/Manufacturing_images/Motor_pulley.png)
-
-## **3. First prototype :** 
-
-
-### **3.1. One axis bottom plate :**
-=======
-//todo : add the function that allows to calculate the radius of the pulley test
 
 ## **4. First prototype :** 
 
@@ -162,7 +145,7 @@ As the first prototype purpose is to balance in one axis of freedom, we needed a
 
 ### **3.3 reaction wheel support :** 
  
-The part here bellow is designed to hold the threaded rod to hold the reaction wheel..
+The part here bellow is designed to hold the threaded rod to hold the reaction wheel.
    
 ![Alt text](../images/Manufacturing_images/Reaction_wheel_support.png)
 
@@ -178,6 +161,10 @@ The design of the main plate for the two axis prototype, there were two constrai
 
 
 ![Alt text](../images/Manufacturing_images/Main_plate_two_axis_prototype.png)
+
+
+
+The small marks located next to the inserts for the motor mount are designed to serve as indicators for the motor position. While they are not strictly mandatory, they can be useful for aligning the motors at approximately the same relative position. These marks are more of a helpful guideline rather than a strict requirement. It is up to you whether you choose to include them in the design or not. You have the flexibility to determine the spacing between two of these marks according to your preference or specific needs.
 
 ### **4.2 The Stick :**
 
@@ -201,10 +188,13 @@ To achieve the composition of materials, we programmed a color change during the
 
 ### **4.3 The Motor Support :**
 
+The design of the motor support for this project is largely similar to the one used for the single-axis prototype. However, there are a few notable differences. Firstly, the holes used for attaching the motor support to the plate are positioned closer together in this design. Additionally, the base of the motor support is narrower. This modification was made to ensure that the wheel holder and the handle could remain compact, as increasing their size was something we aimed to avoid.
 
 ![Alt text](../images/Manufacturing_images/Motor_mount_two_axis.png)
 
 ### **4.4 The reaction wheel holder :**
+
+This part is specifically designed to securely hold the two reactions perpendicularly, while minimizing the distance between both wheels. The goal is to make the model as compact as possible. There are two designated positions for threaded rods vertically, which serve to connect this part with the main plate. Additionally, two other holes are provided for threaded rods to be inserted perpendicular to the part, enabling them to hold the reaction wheel in place.
 
 ![Alt text](../images/Manufacturing_images/TwoAxisWheelHolder-1.png)
 
