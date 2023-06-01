@@ -1,1 +1,1 @@
-# mit-unicycle
+# Documentation repo for the project
