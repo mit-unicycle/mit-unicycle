@@ -144,13 +144,14 @@ For this particular printing, the most important setting to consider is the **pr
 ### **2.3. Motor coupler**
 
 For the motor coupler, we machined them using the tools available to us. This approach enabled us to create a high-quality coupler specifically designed for the motor we had. We were unable to find any suitable couplers for purchase online that could be delivered within a reasonable time frame, which is why we resorted to machining our own. Here's the blueprint we created for this coupler
-![Alt text](../images/Manufacturing_images/Motor_pulley.png)
+
+![Alt text](../images/Manufacturing_images/Metal%20shaft%20coupler%20Drawing%20v3-1.png)
 
 ### **2.4. The motor pulley :**
 
 To do the gear reduction we wanted we needed to fix a small teethed pulley to the motor coupler. We needed this pulley to be small enough to avoid printing enormous pulley if we wanted to modify the gears reduction. Increasing the reduction means modifying the height of the reaction wheel it could also mean buying new belts if the diameter of the pulley is too big. The minimum diameter of the pulley (which is in fact a constraint on the number of teeth) is limited by the screws holes position of the motor coupler. 
 
-![Alt text](../images/Manufacturing_images/Metal%20shaft%20coupler%20Drawing%20v3-1.png)
+![Alt text](../images/Manufacturing_images/Motor_pulley.png)
 
 
 ### **3.1 One axis bottom :**
