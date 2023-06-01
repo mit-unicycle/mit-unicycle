@@ -1,12 +1,10 @@
-article {
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-    max-width: 60rem;
-}
-
 footer {
     display: none;
+}
+
+h2 {
+    color: #a6a2a2;
+    font-weight: 400 !important;
 }
 
 .tl-inner-radius  {
@@ -35,6 +33,11 @@ footer {
     position: relative;
     left: 50%;
     transform: translateX(-50%);
+}
+
+.video-container {
+    display: flex;
+    justify-content: space-around;
 }
 
 .content p {

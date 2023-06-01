@@ -1,35 +1,60 @@
 # Reaction Wheel Robot Project
 
-
-## Index
-1. Building the Prototype
-    - 1.1 [Underlying Physics](building/physics.md)
-    - 1.2 [Components Used](building/components.md)
-    - 1.3 [Manufacturing](building/manufacturing.md)
-    - 1.4 [Assembly Instructions](building/assembly.md)
-    - 1.5 [Wiring Instructions](building/wiring.md)
-
-2. Software Instructions
-    - 2.1 [Controller Explanation](software/controller.md)
-    - 2.2 [Software Environment Setup](software/setup.md)
-    - 2.3 [Software Usage](software/usage.md)
-    - 2.4 [Tuning Guide](software/tuning.md)
-
-3. Process
-    - 3.1 [Challenges Faced](process/challenges.md)
-    - 3.2 [Future Improvements](process/improvements.md)
-    - 3.3 [Conclusion](process/conclusion.md)
-
 ## Introduction
+Welcome to the EPFL Reaction Wheel Robot Project which was realized by a team of 5 Computer Science students during the 2023 summer semester. 
+Through this complete documentation, we will guide you through the manufacturing and software development process of the robot.
 
-Welcome to the EPFL Reaction Wheel Robot Project which was realized by a team of 5 Computer Science students during the 2023 summer semester. Through this complete documentation, we will guide you through the manufacturing and software installation process of the robot. We will also provide you with a detailed description of the software architecture and the different components of the robot, empowering you to further develop the prototype and add new features to it.
+You can find all of the code and the CAD designs we used here: <a href="https://github.com/mit-unicycle ">github.com/mit-unicycle</a> </br>
+Here are the Notion Pages we used to store information: 
+    <a href="https://summer-espadrille-b76.notion.site/Items-to-buy-a39584837b4b4c01937789933fe2feb7">Items to buy</a> ,
+    <a href="https://summer-espadrille-b76.notion.site/373cf709cd534d39bf88407b930a165b?v=a52da7a304df4a25abab6df019da81b1">Design</a> , 
+    <a href="https://summer-espadrille-b76.notion.site/b2048f4cb776428da3f5c4c3cff9b32a?v=64331302bfdf44a6abfef367b66ab922">Setup guides</a>
 
-<iframe width="850" height="520" src="https://www.youtube.com/embed/n_6p-1J551Y" title="The Cubli: a cube that can jump up, balance, and &#39;walk&#39;" frameborder="0"; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<div class="video-container">
+    <iframe width="810" height="456" src="https://www.youtube.com/embed/MygkXkl1ay0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
 
 ## Project Description
-Our practical requirements focus on stabilizing a robot holding itself on a pole or an actuated wheel to the ground, having 2 axis of freedom. The requirements include the following: stabilizing the robot along one first axis, then a second perpendicular axis and therefore apply real-time corrections on the linear combinations of the torque along both axis, allowing the whole to self-balance on the pole or the wheel.
+Our goal is to build a robot that can stabilize itself using reaction wheels. 
+Our original milestones were:
+<ol>
+    <li>Build a prototype with only one axis of freedom. It allows us to learn how to make it work and experiment.</li>
+    <li>Build a prototype with 2 axis of freedom and 2 reaction wheels. It should be able to balance on a single point of contact with the ground.</li>
+    <li>Add a wheel on the bottom that would allow it to move.</li>
+</ol>
+Although, due to issues we will discuss further, we couldn't complete all of them.
 
-## Physics Background
-How are we going to produce the necessary force required to stabilize the robot? The answer is by using reaction wheels. A reaction wheel is a type of flywheel used primarily by spacecraft for attitude control without using fuel for rockets or other reaction devices. They are particularly useful when the spacecraft must be rotated by very small amounts, such as keeping a telescope pointed at a star. Reaction wheels can rotate a spacecraft only around its center of mass (see torque). This is compared to the maneuvering thrusters used on many spacecraft, which can also translate the spacecraft, and are therefore located at various places on the spacecraft. Reaction wheels work around a nominal zero rotation speed. However, external torques on the spacecraft may require a change in the angular momentum vector of the spacecraft, and the wheels' rotation rate will change in response. To reactivate zero rotation speed, the wheel is accelerated in the direction opposite to its rotation. The momentum of the wheel opposes the momentum of the spacecraft, slowing the spacecraft. To rotate the spacecraft in a given direction, the wheel is accelerated in that direction. This causes the spacecraft to rotate in the opposite direction, according to Newton's third law. Due to conservation of angular momentum, the rotation of the spacecraft will accelerate, whether or not the wheel is subsequently slowed back down to its nominal speed. To desaturate the reaction wheel, the direction of rotation of the reaction wheel is reversed for a short time. This transfers angular momentum from the spacecraft to the reaction wheel to slow the rotation of the spacecraft.
+## Technical Overview
+In order to balance a such a device, we must apply real-time corrections to the tilt of the system by using torques generated by the reaction wheels. 
+
+The project can be broken down into three main categories: 
+<ul>
+    <li>Mechanical components and structure</li>
+    <li>Electronics (ESC, actuator, gyroscope/accelerometer, microcontroller, ...) </li>
+    <li>Software (Controller, FSM, fusion algorithms for angle, Filters, ...)</li>
+</ul>
+
+In this document, we will explain how we built each one of them as well as the problems we faced and their solutions.
+
+## Motivation
+The motivation behind the EPFL Reaction Wheel Robot Project stems from our fascination with robotic systems and the desire to explore the principles of balance and stabilization. 
+By constructing a robot that relies on reaction wheels, we aim to delve into the underlying physics and engineering concepts involved in maintaining stability.
+
+Our project presents a unique opportunity to combine theoretical knowledge with hands-on experience in robotics. 
+We believe that understanding the intricate interplay between mechanics, electronics, and software is crucial 
+for tackling complex real-world challenges in the field.
+
+Furthermore, by documenting our journey, we hope to contribute to the growing body of knowledge and inspire others to explore similar projects.
+ We aim to provide clear instructions, explanations, and insights that empower individuals to embark on their own robotic endeavors.
 
 ## First Draft of the Prototype
+
+
+How are we going to produce the necessary force required to stabilize the robot? The answer is by using reaction wheels. A reaction wheel is a type of flywheel used primarily by spacecraft for attitude control without using fuel for rockets or other reaction devices. They are particularly useful when the spacecraft must be rotated by very small amounts, such as keeping a telescope pointed at a star. Reaction wheels can rotate a spacecraft only around its center of mass (see torque). This is compared to the maneuvering thrusters used on many spacecraft, which can also translate the spacecraft, and are therefore located at various places on the spacecraft. Reaction wheels work around a nominal zero rotation speed. However, external torques on the spacecraft may require a change in the angular momentum vector of the spacecraft, and the wheels' rotation rate will change in response. To reactivate zero rotation speed, the wheel is accelerated in the direction opposite to its rotation. The momentum of the wheel opposes the momentum of the spacecraft, slowing the spacecraft. To rotate the spacecraft in a given direction, the wheel is accelerated in that direction. This causes the spacecraft to rotate in the opposite direction, according to Newton's third law. Due to conservation of angular momentum, the rotation of the spacecraft will accelerate, whether or not the wheel is subsequently slowed back down to its nominal speed. To desaturate the reaction wheel, the direction of rotation of the reaction wheel is reversed for a short time. This transfers angular momentum from the spacecraft to the reaction wheel to slow the rotation of the spacecraft.
+## Safety Considerations
+The project involves working with mechanical components, electronics, and software. 
+It is important to be aware of potential hazards and take necessary precautions to ensure the safety of individuals involved in the project. 
+Below are some safety considerations, potential hazards, and the safety measures implemented.
+<ul>
+    <li>Hardware measures, such as covers for fingers, </li>
+</ul>
