@@ -145,7 +145,9 @@ As the first prototype purpose is to balance in one axis of freedom, we needed a
 
 ### **3.3 reaction wheel support :** 
  
+
 The part here bellow is designed to hold the threaded rod to hold the reaction wheel.
+
    
 ![Alt text](../images/Manufacturing_images/Reaction_wheel_support.png)
 
