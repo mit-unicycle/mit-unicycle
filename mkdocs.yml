@@ -34,7 +34,7 @@ theme:
   features:
     - navigation.instant
     - header.autohide
-
+    
   icon:
       repo: fontawesome/brands/github
 

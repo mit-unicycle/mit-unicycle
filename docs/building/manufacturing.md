@@ -8,46 +8,19 @@
 
 In this section you will find the information related to the realization of the 3D designs,the specification about the printing of our parts and the blueprints of the parts. This section will be separated in **3 parts** : the first presenting the parts that can be used for both one and two axis, then the parts specific to the one axis design and finally the parts for the two axis model. For the designs we used **Fusion 360** and **Prusa 3D printers**. Note that every dimension reported on the blueprint are given in **millimeters (mm)**.
 
-1.   **How to design a GT-2 pulley with Fusion 360**
-
-2. **Common parts :**
+1. **Common parts**
 
     - 1.1 The reaction wheel and the spacers
-
     - 1.2 The teethed pulley
     - 1.3 The motor coupler
     - 1.4 The motor pulley
 
 
-3. **First prototype**
-    - 3.1 Main platform
-    - 3.2 Motor shaft holder
-    - 3.3 Reaction wheel holder
+2. **First prototype**
+    - 2.1 Main platform
+    - 2.2 Motor shaft holder
+    - 2.3 Reaction wheel holder
 
-4. **Second prototype :** 
-   - 4.1 Main plateform
-
-   - 4.2 The Stick 
-   - 4.3 the motor support
-   - 4.4 the motor shaft holder
-   - 4.5 the reaction wheel holder
-
-
-## **how to design a GT-2 parametric design of a pulley**
-
- * **What is a GT-2 pulley ?**
-
-A GT-2 pulley is a type of standard for belts and pulleys, it is defined mostly by the pitch of the teeth and the distance between the edges of two teeth. Here's the description of the parameters we're interested in for designing the teethed pulley. 
-
-First the value R1 is the inner pitch of the teeth of our pulley, we can think about it as if we small circles of this diameter at the same position at both side of one of the pulley's teeth.
-
-Then the R3 parameter if the tooth radius, in the case of the design of the pulley.
-
-The parameter P is really important since it is the distance between two teeth (**in mm**). Therefore the diameter is defined by : (P*N)/Pi, with N, the number of teeth we want, therefore by doing basic algebra we can find the perimeter of such a pulley as a function of N and P.
-
-![Alt text](../images/belt-tolerence.jpg)
-
- * **How to create the parametric design using fusion parametric design option ?**
 
 ## **1. Common parts**
 
@@ -84,7 +57,7 @@ In order to avoid that the belt hits the nuts from the reaction wheel while work
 
 We used GT-2 belts, which necessitated the design of GT-2 pulleys. To achieve this, we employed a functionality in **Fusion 360** that enabled us to create parametric designs of the pulleys. This approach facilitated the rapid design of the desired pulley variations and also facilitated testing different gear reduction options. The creation of this design is explained step by steps just bellow
 
-The GT-2 pulley follows a specific standard for the teeth, which includes the pitch of the teeth on the pulleys and belts. Therefore, the parametric design of **the pulley size depend on the desired number of teethAlt text that's why there is no informations about the diamater of the pulley**. In our specific application, the number of teeth required is determined by the desired gear reduction.
+The GT-2 pulley follows a specific standard for the teeth, which includes the pitch of the teeth on the pulleys and belts. Therefore, the parametric design of **the pulley size depend on the desired number of teeth**. In our specific application, the number of teeth required is determined by the desired gear reduction.
 
 ![Alt text](../images/GT2_7_REDUCTION%20Drawing%20v1-1.png)
 
@@ -100,8 +73,6 @@ For this particular printing, the most important setting to consider is the **pr
 
 For the motor coupler, we machined them using the tools available to us. This approach enabled us to create a high-quality coupler specifically designed for the motor we had. We were unable to find any suitable couplers for purchase online that could be delivered within a reasonable time frame, which is why we resorted to machining our own. Here's the blueprint we created for this coupler
 
-//todo : modify drawing, 3mm of thickness
-
 ![Alt text](../images/Metal%20shaft%20coupler%20Drawing%20v3-1.png)
 
 ### **1.4. The motor pulley :**
@@ -110,11 +81,7 @@ To do the gear reduction we wanted we needed to fix a small teethed pulley to th
 
 //todo : add the function that allows to calculate the radius of the pulley test
 
-**! again there is no informations about the pulley's diameter on the blueprint since it depends on the number of teeth !**
-
-![Alt text](../images/Motor%20pulley%20Drawing%20v1-1.png)
-
-## **2. First prototype :** 
+## **4. First prototype :** 
 
    <font size = "3">1. Support plate :</font> 
 
@@ -125,15 +92,11 @@ To do the gear reduction we wanted we needed to fix a small teethed pulley to th
 
 ## First prototype : reaction wheel older : 
  
-The part here bellow is designed to hold the threaded rod to hold the reaction wheel.
    
 ![Alt text](../images/One%20axis%20wheel%20holder%20Drawing%20v3-1.png)
 
 
 
 ## Sources of the images
-
-GT pulley informations taken from : https://openbuildspartstore.com/ 
-
 
 
