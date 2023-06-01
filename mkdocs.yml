@@ -28,15 +28,16 @@ extra_css:
   - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.css
 
 theme:
-  name: material
+  name: dracula
   custom_dir: docs/custom-theme/
 
   features:
     - navigation.instant
     - header.autohide
     
-  icon:
-      repo: fontawesome/brands/github
+  font:
+    text: Roboto
+    code: Roboto
 
   font:
     text: Roboto
@@ -56,6 +57,3 @@ theme:
       toggle:
         icon: material/brightness-4
         name: Switch to light mode
-
-repo_url: https://github.com/mit-unicycle
-repo_name: mit-unicycle
