@@ -78,6 +78,7 @@ If we still want to be able to "choose" the diameter, then with basic algebra fi
 $$ N = \frac{D \pi}{P}$$
 
 
+
 To create a parametric design for a GT2 pulley, you can refer to the video tutorial mentioned. It provides a helpful guide to follow and assists in achieving the desired outcome : 
 
 <div style="text-align:center">
@@ -140,10 +141,6 @@ For the motor coupler, we machined them using the tools available to us. This ap
 
 To do the gear reduction we wanted we needed to fix a small teethed pulley to the motor coupler. We needed this pulley to be small enough to avoid printing enormous pulley if we wanted to modify the gears reduction. Increasing the reduction means modifying the height of the reaction wheel it could also mean buying new belts if the diameter of the pulley is too big. The minimum diameter of the pulley (which is in fact a constraint on the number of teeth) is limited by the screws holes position of the motor coupler. 
 
-
-
-## **4. First prototype :** 
-=======
 ![Alt text](../images/Manufacturing_images/Metal%20shaft%20coupler%20Drawing%20v3-1.png)
 
 
@@ -163,7 +160,7 @@ As the first prototype purpose is to balance in one axis of freedom, we needed a
 
 ### **3.3 reaction wheel support :** 
  
-The part here bellow is designed to hold the threaded rod to hold the reaction wheel..
+The part here bellow is designed to hold the threaded rod to hold the reaction wheel.
    
 ![Alt text](../images/Manufacturing_images/Reaction_wheel_support.png)
 
