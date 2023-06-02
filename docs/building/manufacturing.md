@@ -8,6 +8,20 @@
 
 In this section you will find the information related to the realization of the 3D designs,the specification about the printing of our parts and the blueprints of the parts. This section will be separated in **3 parts** : the first presenting the parts that can be used for both one and two axis, then the parts specific to the one axis design and finally the parts for the two axis model. For the designs we used **Fusion 360** and **Prusa 3D printers**. Note that every dimension reported on the blueprint are given in **millimeters (mm)**.
 
+1. **Common parts**
+
+    - 1.1 The reaction wheel and the spacers
+    - 1.2 The teethed pulley
+    - 1.3 The motor coupler
+    - 1.4 The motor pulley
+
+
+2. **First prototype**
+    - 2.1 Main platform
+    - 2.2 Motor shaft holder
+    - 2.3 Reaction wheel holder
+
+=======
 
 1.   **How to design a GT-2 pulley with Fusion 360**
 
@@ -62,7 +76,6 @@ A GT-2 pulley is a type of standard for belts and pulleys, it is defined mostly 
 If we still want to be able to "choose" the diameter, then with basic algebra find the number of teeth needed for the desired diameter:
 
 $$ N = \frac{D \pi}{P}$$
-
 
 
 To create a parametric design for a GT2 pulley, you can refer to the video tutorial mentioned. It provides a helpful guide to follow and assists in achieving the desired outcome : 
@@ -127,6 +140,10 @@ For the motor coupler, we machined them using the tools available to us. This ap
 
 To do the gear reduction we wanted we needed to fix a small teethed pulley to the motor coupler. We needed this pulley to be small enough to avoid printing enormous pulley if we wanted to modify the gears reduction. Increasing the reduction means modifying the height of the reaction wheel it could also mean buying new belts if the diameter of the pulley is too big. The minimum diameter of the pulley (which is in fact a constraint on the number of teeth) is limited by the screws holes position of the motor coupler. 
 
+
+
+## **4. First prototype :** 
+=======
 ![Alt text](../images/Manufacturing_images/Metal%20shaft%20coupler%20Drawing%20v3-1.png)
 
 
@@ -134,6 +151,7 @@ To do the gear reduction we wanted we needed to fix a small teethed pulley to th
 
 
 As the first prototype purpose is to balance in one axis of freedom, we needed a plate where we could fit the motor, the ESC, the breadboard and the esp8266. **Note that for the first prototype we did all the tests without the battery mounted.**
+
 
 ![Alt text](../images/Manufacturing_images/one_axis_bottom.png)
 
@@ -147,6 +165,7 @@ As the first prototype purpose is to balance in one axis of freedom, we needed a
  
 
 The part here bellow is designed to hold the threaded rod to hold the reaction wheel.
+
 
    
 ![Alt text](../images/Manufacturing_images/Reaction_wheel_support.png)
@@ -175,6 +194,7 @@ This part is the stick that serves the purpose of balancing the model. Although 
 To achieve the composition of materials, we programmed a color change during the print process where we intended to switch to the TPU filament. Due to the difference in density between TPU and PETG, we had to make slight adjustments to the printer's head positioning to meet the specific requirements for printing TPU with Prusa printers.
 
 ![Alt text](../images/Manufacturing_images/stick%20Drawing%20v1-1.png)
+
 
 **Note that in order to achieve a desirable texture with the TPU material, we utilized the following specific parameters (ONLY for the TPU part):**
 
