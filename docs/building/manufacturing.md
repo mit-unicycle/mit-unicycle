@@ -114,7 +114,9 @@ The accompanying design picture, illustrates the dimensions of one of these spac
 
 * **The spacing plates :** 
 
-In order to avoid that the belt hits the nuts from the reaction wheel while working, we needed spacer plates to increase the distance between the teethed pulley therefore we designed the spacing plates here bellow is the design and the dimensions of those spacers.
+In order to avoid that the belt hits the nuts from the reaction wheel while working, we needed spacer plates to increase the distance between the teethed pulley therefore we designed the spacing plates here bellow is the design and the dimensions of those spacers. we use 2 of them in the model but if needed you try to use more.
+
+![Alt text](../images/spacing%20plates%20v1-1.png)
 
 
 ### **2.2. The teethed pulley**
@@ -143,12 +145,17 @@ To do the gear reduction we wanted we needed to fix a small teethed pulley to th
 
 ![Alt text](../images/Manufacturing_images/Motor_pulley.png)
 
+When used on the first prototype you need to insert a ball bearing, but you don't if you only use it for the two axis prototype.
 
-## **4. First prototype :** 
 
+## **3. First prototype :** 
+
+
+### **3.1 One axis bottom :**
 
 As the first prototype purpose is to balance in one axis of freedom, we needed a plate where we could fit the motor, the ESC, the breadboard and the esp8266. **Note that for the first prototype we did all the tests without the battery mounted.**
 
+We printed this part only in PETG and glued some rubber on the bottom to add friction, but if we had had more time we would have printed this as a composite of two materials (See in the section about the balancing stick).
 
 ![Alt text](../images/Manufacturing_images/one_axis_bottom.png)
 
