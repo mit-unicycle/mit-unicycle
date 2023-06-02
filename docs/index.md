@@ -10,16 +10,8 @@ Here are the Notion Pages we used to store information:
     <a href="https://summer-espadrille-b76.notion.site/373cf709cd534d39bf88407b930a165b?v=a52da7a304df4a25abab6df019da81b1">Design</a> , 
     <a href="https://summer-espadrille-b76.notion.site/b2048f4cb776428da3f5c4c3cff9b32a?v=64331302bfdf44a6abfef367b66ab922">Setup guides</a>
 
-This is the one axis version of the robot balancing itself: 
-
 <div class="video-container">
     <iframe width="810" height="456" src="https://www.youtube.com/embed/MygkXkl1ay0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-</div>
-
-This is the rushed, two-days-crunch version of the robot balancing one one axis, as we did not manage to balance in two axes:
-
-<div class="video-container">
-    <iframe width="352" height="626" src="https://www.youtube.com/embed/WXMI3_Q6Gqw" title="Two axis balancing stabilized" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </div>
 
 ## Project Description

@@ -16,7 +16,7 @@ The design for this robot is the one we used for the final version of the one ax
 
 ## Two Axes Balancing Robot v1 
 
-![Two Axes v1](../images/two_axes_nice.jpg)
+![Two Axes v1](../images/two_axesv1.jpg)
 
 The design of this robot is quite similar to the before one, but using a bigger plate to hold two motors, ESCs and wheels. 
 
