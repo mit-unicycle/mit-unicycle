@@ -145,13 +145,13 @@ To do the gear reduction we wanted we needed to fix a small teethed pulley to th
 
 ![Alt text](../images/Manufacturing_images/Motor_pulley.png)
 
-When used on the first prototype you need to insert a ball bearing, but you don't if you only use it for the two axis prototype.
-
-
 ## **3. First prototype :** 
 
 
-### **3.1 One axis bottom :**
+### **3.1. One axis bottom plate :**
+
+
+
 
 As the first prototype purpose is to balance in one axis of freedom, we needed a plate where we could fit the motor, the ESC, the breadboard and the esp8266. **Note that for the first prototype we did all the tests without the battery mounted.**
 
