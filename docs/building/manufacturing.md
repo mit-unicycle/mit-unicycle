@@ -45,6 +45,7 @@ In this section you will find the information related to the realization of the 
 
 4. **Second prototype :** 
     - 4.1 Main platform
+    - 4.1 Main platform
 
     - 4.2 The Stick 
 
@@ -80,7 +81,11 @@ $$ N = \frac{D \pi}{P}$$
 
 
 **To create a parametric design for a GT2 pulley, you can refer to the video tutorial mentioned. It provides a helpful guide to follow and assists in achieving the desired outcome :**
+**To create a parametric design for a GT2 pulley, you can refer to the video tutorial mentioned. It provides a helpful guide to follow and assists in achieving the desired outcome :**
 
+<div style="text-align:center">
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/PDNIiLSTzG4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+</div>
 <div style="text-align:center">
   <iframe width="560" height="315" src="https://www.youtube.com/embed/PDNIiLSTzG4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 </div>
@@ -117,6 +122,9 @@ The accompanying design picture, illustrates the dimensions of one of these spac
 In order to avoid that the belt hits the nuts from the reaction wheel while working, we needed spacer plates to increase the distance between the teethed pulley therefore we designed the spacing plates here bellow is the design and the dimensions of those spacers. we use 2 of them in the model but if needed you try to use more.
 
 ![Alt text](../images/spacing%20plates%20v1-1.png)
+In order to avoid that the belt hits the nuts from the reaction wheel while working, we needed spacer plates to increase the distance between the teethed pulley therefore we designed the spacing plates here bellow is the design and the dimensions of those spacers. we use 2 of them in the model but if needed you try to use more.
+
+![Alt text](../images/spacing%20plates%20v1-1.png)
 
 
 ### **2.2. The teethed pulley**
@@ -145,13 +153,8 @@ To do the gear reduction we wanted we needed to fix a small teethed pulley to th
 
 ![Alt text](../images/Manufacturing_images/Motor_pulley.png)
 
-## **3. First prototype :** 
 
-
-### **3.1. One axis bottom plate :**
-
-
-
+### **3.1 One axis bottom :**
 
 As the first prototype purpose is to balance in one axis of freedom, we needed a plate where we could fit the motor, the ESC, the breadboard and the esp8266. **Note that for the first prototype we did all the tests without the battery mounted.**
 
