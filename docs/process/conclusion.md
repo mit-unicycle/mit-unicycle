@@ -1,6 +1,6 @@
 # Conclusion
 
-In summary, the completion of this ambitious eight-week project marks a significant milestone in our journey, even if we did not manage to make the two axes robot balance. As we reflect on the challenges encountered throughout the process, including the instability of angle measurements, the meticulous and time-consuming tuning of the PID controller, and occasional conflicts arising from different opinions, we recognize the invaluable lessons learned and the growth we have achieved as a team.
+In summary, the completion of this ambitious eight-week project marks a significant milestone in our journey. As we reflect on the challenges encountered throughout the process, including the instability of angle measurements, the meticulous and time-consuming tuning of the PID controller, and occasional conflicts arising from different opinions, we recognize the invaluable lessons learned and the growth we have achieved as a team.
 
 Undoubtedly, numerous late nights were dedicated to refining and perfecting our self-balancing robot. There were moments of uncertainty when the success seemed uncertain. Although this project was a very difficult one, in the end, we pushed through with determination and managed to get a robot that balances itself. The feeling of seeing the result of countless hours of work cannot be expressed in words 
 
