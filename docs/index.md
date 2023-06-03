@@ -34,8 +34,8 @@ Our original milestones were:
 Although, due to issues we will discuss further, we couldn't complete all of them.
 <br><br>
 <section class="images">
-    <div class="image_container" style="background-image: url('/images/Home_page/oneaxis_centered.png');"></div>
-    <div class="image_container" style="background-image: url('/images/Home_page/twoaxis_centered.jpg');"></div>
+    <div class="image_container" style="background-image: url('mit-unicycle/images/Home_page/oneaxis_centered.png');"></div>
+    <div class="image_container" style="background-image: url('mit-unicycle/images/Home_page/twoaxis_centered.jpg');"></div>
 </section>
 
 ## Technical Overview
