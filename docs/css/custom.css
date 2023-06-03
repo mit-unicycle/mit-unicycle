@@ -28,12 +28,30 @@ h2 {
     border-top-left-radius: 100%;
 }
 
-.content img {
+.component-block {
+    display: flex;
+    flex-direction: row;
+    height: 20rem;
+    gap: 5rem;
+    justify-content: center;
+    overflow: scroll;
+}
+
+.component-block img {
+    width: 20rem;
+    height: auto;
+}
+
+.component-block div {
+    align-self: center;
+}
+
+/* .content img {
     max-width: 60%;
     position: relative;
     left: 50%;
     transform: translateX(-50%);
-}
+} */
 
 .video-container {
     display: flex;
