@@ -14,6 +14,7 @@ This is the one axis version of the robot balancing itself:
 
 <div class="video-container">
     <iframe width="560" height="315" src="https://www.youtube.com/embed/pNNj_DhVxd4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
 
 This is the rushed, two-days-crunch version of the robot balancing one one axis, as we did not manage to balance in two axes:
 
