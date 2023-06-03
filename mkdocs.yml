@@ -31,6 +31,7 @@ extra_css:
 theme:
   name: dracula
   custom_dir: docs/custom-theme/
+  logo: 
 
   features:
     - navigation.instant

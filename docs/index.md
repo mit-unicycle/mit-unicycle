@@ -13,13 +13,13 @@ Here are the Notion Pages we used to store information:
 This is the one axis version of the robot balancing itself: 
 
 <div class="video-container">
-    <iframe width="810" height="456" src="https://www.youtube.com/embed/MygkXkl1ay0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/pNNj_DhVxd4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </div>
 
 This is the rushed, two-days-crunch version of the robot balancing one one axis, as we did not manage to balance in two axes:
 
 <div class="video-container">
-    <iframe width="352" height="626" src="https://www.youtube.com/embed/WXMI3_Q6Gqw" title="Two axis balancing stabilized" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <iframe width="416" height="740" src="https://www.youtube.com/embed/wxip89MBbew" title="Self-balancing Robot on Two Axes" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </div>
 
 ## Project Description
