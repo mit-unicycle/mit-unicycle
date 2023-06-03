@@ -69,3 +69,16 @@ As the name suggests, the channel derives the error w.r.t time. Thus, the contro
 As the robot approaches the SP, the error decreases and the derivative is then negative. Therefore, when adding all of the channels together, the derivative term will counteract the other channels to adjust the rotational speed in advance. 
 
 In brief, the proportional channel will try to close the gap between the SP and the current position; the integral channel will fix the error that the proportional did not manage to; and finally, the derivative path will counterbalance the other two to help it stabilize faster. In conjunction, the three channels work together to keep the robot in balance. 
+
+## Dynamic Shifting of the Setpoint 
+
+
+Shift the setpoint automatically in by +-0.5 using an LQR algorithm to reduce overshoot and make the system more stable.
+
+The algorithm is as follows:
+ - The input and output are averaged over a window of 100 and 50 respectively
+ - The output is then converted to a logarithmic scale and constrained
+ - The input average is constrained to be within +-0.5 of the original setpoint
+ - The setpoint is then calculated by subtracting a multiple of the output from the input and constraining it
+
+This will cause the setpoint to want to drift towards the average tilt angle of the system (setpoint), however the output will try to counteract this drift by pushing the setpoint in the opposite direction (penalizing a high output). Meaning the higher the output, the more the setpoint will be pushed in the opposite direction, and vice versa, causing a dynamic equilibrium towards the real setpoint.

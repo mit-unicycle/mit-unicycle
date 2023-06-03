@@ -1,22 +1,23 @@
-site_name: CS-358 Self Balancing Robots
+site_name: CS-358 Self Balancing Robot
 
 nav:
     - Home: 'index.md'
-    - Building the Prototype :
-      - Underlying Physics: 'building/physics.md'
-      - Components Used : 'building/components.md'
+    - Building the Prototype:
+      - Underlying Physic: 'building/physics.md'
+      - Components Used: 'building/components.md'
       - Manufacturing: 'building/manufacturing.md'
-      - Assembly Instructions : 'building/assembly.md'
-      - Wiring Instructions : 'building/wiring.md'
-    - Process :
-      - Challenges Faced: 'process/challenges.md'
-      - Future Improvements : 'process/improvements.md'
-      - Conclusion: 'process/conclusion.md'      
-    - Software Instructions :
+      - Assembly Instructions: 'building/assembly.md'
+      - Wiring Instructions: 'building/wiring.md'
+    - Software Instructions:
       - Controller Explanation: 'software/controller.md'
-      - Software Environment Setup : 'software/setup.md'
-      - Software Usage: 'software/usage.md'
+      - Software : 'software/usage.md'
       - Tuning Guide : 'software/tuning.md'
+    - Process:
+      - Prototype History: 'process/prototypes.md'
+      - Challenges Faced: 'process/challenges.md'
+      - Future Improvements: 'process/improvements.md'
+      - Conclusion: 'process/conclusion.md'  
+      - Thanks: 'process/thanks.md'    
 
 extra_javascript:
   - javascript/katex.js 
@@ -35,6 +36,10 @@ theme:
     - navigation.instant
     - header.autohide
     
+  font:
+    text: Roboto
+    code: Roboto
+
   font:
     text: Roboto
     code: Roboto

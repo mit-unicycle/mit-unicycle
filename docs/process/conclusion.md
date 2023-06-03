@@ -1,1 +1,9 @@
 # Conclusion
+
+In summary, the completion of this ambitious eight-week project marks a significant milestone in our journey, even if we did not manage to make the two axes robot balance. As we reflect on the challenges encountered throughout the process, including the instability of angle measurements, the meticulous and time-consuming tuning of the PID controller, and occasional conflicts arising from different opinions, we recognize the invaluable lessons learned and the growth we have achieved as a team.
+
+Undoubtedly, numerous late nights were dedicated to refining and perfecting our self-balancing robot. There were moments of uncertainty when the success seemed uncertain. Although this project was a very difficult one, in the end, we pushed through with determination and managed to get a robot that balances itself. The feeling of seeing the result of countless hours of work cannot be expressed in words 
+
+Moreover, beyond the technical accomplishments, this project helped us develop on a personal and professional level. The collaborative nature of this project encouraged us to work in team, allowing us to appreciate the importance of communication and cooperation. We gained hands-on experience in various areas, from using CAD software, learning the operation of mechanical tools, and using technologies like 3D printing and laser cutting to bring our ideas to life. Not only that, but we also improved our programming skills and gained some insight into the field of robotics.
+
+In conclusion, we proudly present this self-balancing robot as a testament to our dedication, hard work, and determination. It is with great satisfaction and gratification that we look back on the solved challenges and the knowledge acquired during the process. We hope that this project, will serve as an inspiration to future students in IC. We encourage them to embark on the CS-358 course, which wil help them develop skills on the many fields mentioned.
