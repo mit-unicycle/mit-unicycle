@@ -20,11 +20,8 @@ In our search to make the robot stabilize, we tried different pulley reductions.
 
 ## Dynamically Shifting the Setpoint
 
-<<<<<<< HEAD
 About one week before the deadline, we were managing to stabilize the robot for a few seconds. Nonetheless, it would quickly start to oscillate and fall. We noticed that often, the setpoint we found felt "off", as if it was not really the robot's setpoint. By re-watching James Bruton's [video](https://youtu.be/pJfMFUcquWM) on the subject, we realized that shifting the setpoint dynamically was the way to go (see the explanation [here](../software/usage.md)) for more information.
 
-=======
->>>>>>> main
 ## Collaboration
 
 For many of us, this was the first time working on such a big project and with so many team members. As such, collaboration was a a significant challenge right from the beginning. All of the team members were really motivated and invested in the project. Hence, when there were different opinions about how to do something, it was often hard to reconcile the different viewpoints. Often, when the opinions differed, they led to significant internal discussions. A notable example is what motors we should use. Some of us believed that a brushed would be the best option, while others believed that a brushless one would be more adequate. In the end, we often solved such conflicts by testing both options and finding which would be "objectively" the best. 
