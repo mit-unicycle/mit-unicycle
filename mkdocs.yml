@@ -12,6 +12,7 @@ nav:
       - Controller Explanation: 'software/controller.md'
       - Software : 'software/usage.md'
       - Tuning Guide : 'software/tuning.md'
+      - Web App : 'software/webapp.md'
     - Process:
       - Prototype History: 'process/prototypes.md'
       - Challenges Faced: 'process/challenges.md'
@@ -31,31 +32,7 @@ extra_css:
 theme:
   name: dracula
   custom_dir: docs/custom-theme/
-  logo: 
-
-  features:
-    - navigation.instant
-    - header.autohide
-    
+  
   font:
     text: Roboto
     code: Roboto
-
-  font:
-    text: Roboto
-    code: Roboto
-
-  palette:
-    # Palette toggle for light mode
-    - media: "(prefers-color-scheme: light)"
-      scheme: default
-      toggle:
-        icon: material/brightness-7
-        name: Switch to dark mode
-
-    # Palette toggle for dark mode
-    - media: "(prefers-color-scheme: dark)"
-      scheme: slate
-      toggle:
-        icon: material/brightness-4
-        name: Switch to light mode
