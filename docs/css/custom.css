@@ -55,9 +55,45 @@ h2 {
     align-self: center;
 }
 
-.video-container {
+.videos {
     display: flex;
-    justify-content: space-around;
+    flex-direction: row;
+    gap: 3rem;
+    height: fit-content;
+}
+
+.videos iframe{
+    width: 100%;
+    aspect-ratio: 16/9;
+
+    justify-self: center;
+    align-self: center;
+}
+
+.images {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+
+    justify-content: space-evenly;
+
+    gap: 3rem;
+    max-height: fit-content;
+}
+
+.image_container {
+    aspect-ratio: 1;
+
+    width: 100%;
+    height: 100%;
+
+    background-size: cover;
+    background-position: center;
+
+    justify-self: center;
+    align-self: center;
+
+    flex-shrink: inherit;
 }
 
 .content p {
