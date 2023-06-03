@@ -4,11 +4,23 @@ Throughout the eight weeks of working in these project, we faced many challenges
 
 ## Obtaining a Stable and Precise Angles from the MPU605
 
-## Using the Implementation Incorrectly 
+
+
+## Using the PID Implementation Incorrectly 
+
+For two whole weeks, we did not realize that we were using the PID controller library wrongly. Back then, we has been working with an ESC whose neutral value (no motor spinning) was 1500; above 1500 corresponded to a turning direction, and under 1500 corresponded to the other direction. However, the PID controller's output ranged around 0. That is, for the controller, 0 meant neutral, positive meant spinning in one direction, and negative in the other. 
+
+Before realizing this was the problem, we tried changing to another PID implementation, writing our own PID controller, making the ESC skip its neutral range to increase responsiveness, we tried to continue tuning thinking that maybe we had incorrect parameters, etc. 
+
+In the end, we realized that the only thing to do was shifting the PID output so that it oscillates around 1500 instead of 0. 
 
 ## Maximizing the Torque From the Motor
 
+In our search to make the robot stabilize, we tried different pulley reductions. We started with a $4\times$ reduction, went on to do a $5\times$ and ended up with a ... By doing so, we managed to increase the torque of the wheel and make the robot stabilize more easily.   
+
 ## Dynamically Shifting the Setpoint
+
+About one week before the deadline, we were managing to stabilize the robot for a few seconds. Nonetheless, it would quickly start to oscillate and fall. We noticed that often, the setpoint we found felt "off", as if it was not really the robot's setpoint. By re-watching James Bruton's [video](https://youtu.be/pJfMFUcquWM) on the subject, we realized that shifting the setpoint dynamically was the way to go (see the explanation [here](../software/usage.md)) for more information.
 
 ## Collaboration
 
