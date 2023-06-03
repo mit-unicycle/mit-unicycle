@@ -2,8 +2,12 @@
 
 Throughout the eight weeks of working in these project, we faced many challenges and difficulties. In this part of the documentation, we will address these challenges and discuss the solutions we found. The goal is to document the process and provide a small troubleshooting guide. 
 
-## Obtaining a Stable and Precise Angles from the MPU605
+## Finding the Right Motors Controllers
+<ul>
+    <li>Having a brushless setup means that the controllers must be very expensive to accomplish the level of control we need. A brushed one doesn't need any fancy controller, has constant torque and is much cheaper</li>
+</ul>
 
+## Obtaining a Stable and Precise Angles from the MPU6050
 
 We struggled a lot to get reliable and correct angle measurement from the MPU6050. At the beginning, we thought is could be due to a mechanical or electromagnetic interference. We quickly discarded the possibility of electromagnetic interference, as we still experienced the problem if the motors were not turned on. For the mechanical interference issue, we tried adding cushioning under the MPU6050 to improve the readings. This helped, but it did not solve the problem. 
 
