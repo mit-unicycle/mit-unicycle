@@ -4,9 +4,11 @@ Throughout the eight weeks of working in these project, we faced many challenges
 
 ## Obtaining a Stable and Precise Angles from the MPU605
 
+
 We struggled a lot to get reliable and correct angle measurement from the MPU6050. At the beginning, we thought is could be due to a mechanical or electromagnetic interference. We quickly discarded the possibility of electromagnetic interference, as we still experienced the problem if the motors were not turned on. For the mechanical interference issue, we tried adding cushioning under the MPU6050 to improve the readings. This helped, but it did not solve the problem. 
 
 The problem seemed to be that the MPU6050 was sending to much data to quickly to the MPU6050. So, in the end, something that helped was increasing the frequency of the NodeMCu. By doing so, the microcontroller was able to process the data quicker and more reliably. Also, decreasing the sample speed of the MPU6050 improved the readings.
+
 
 ## Using the PID Implementation Incorrectly 
 
