@@ -45,6 +45,7 @@ In this section you will find the information related to the realization of the 
 
 4. **Second prototype :** 
     - 4.1 Main platform
+    - 4.1 Main platform
 
     - 4.2 The Stick 
 
@@ -78,8 +79,13 @@ If we still want to be able to "choose" the diameter, then with basic algebra fi
 $$ N = \frac{D \pi}{P}$$
 
 
-To create a parametric design for a GT2 pulley, you can refer to the video tutorial mentioned. It provides a helpful guide to follow and assists in achieving the desired outcome : 
 
+**To create a parametric design for a GT2 pulley, you can refer to the video tutorial mentioned. It provides a helpful guide to follow and assists in achieving the desired outcome :**
+**To create a parametric design for a GT2 pulley, you can refer to the video tutorial mentioned. It provides a helpful guide to follow and assists in achieving the desired outcome :**
+
+<div style="text-align:center">
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/PDNIiLSTzG4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+</div>
 <div style="text-align:center">
   <iframe width="560" height="315" src="https://www.youtube.com/embed/PDNIiLSTzG4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 </div>
@@ -113,7 +119,12 @@ The accompanying design picture, illustrates the dimensions of one of these spac
 
 * **The spacing plates :** 
 
-In order to avoid that the belt hits the nuts from the reaction wheel while working, we needed spacer plates to increase the distance between the teethed pulley therefore we designed the spacing plates here bellow is the design and the dimensions of those spacers.
+In order to avoid that the belt hits the nuts from the reaction wheel while working, we needed spacer plates to increase the distance between the teethed pulley therefore we designed the spacing plates here bellow is the design and the dimensions of those spacers. we use 2 of them in the model but if needed you try to use more.
+
+![Alt text](../images/spacing%20plates%20v1-1.png)
+In order to avoid that the belt hits the nuts from the reaction wheel while working, we needed spacer plates to increase the distance between the teethed pulley therefore we designed the spacing plates here bellow is the design and the dimensions of those spacers. we use 2 of them in the model but if needed you try to use more.
+
+![Alt text](../images/spacing%20plates%20v1-1.png)
 
 
 ### **2.2. The teethed pulley**
@@ -134,39 +145,37 @@ For this particular printing, the most important setting to consider is the **pr
 
 For the motor coupler, we machined them using the tools available to us. This approach enabled us to create a high-quality coupler specifically designed for the motor we had. We were unable to find any suitable couplers for purchase online that could be delivered within a reasonable time frame, which is why we resorted to machining our own. Here's the blueprint we created for this coupler
 
-![Alt text](../images/Metal%20shaft%20coupler%20Drawing%20v3-1.png)
+![Alt text](../images/Manufacturing_images/Metal%20shaft%20coupler%20Drawing%20v3-1.png)
 
 ### **2.4. The motor pulley :**
 
 To do the gear reduction we wanted we needed to fix a small teethed pulley to the motor coupler. We needed this pulley to be small enough to avoid printing enormous pulley if we wanted to modify the gears reduction. Increasing the reduction means modifying the height of the reaction wheel it could also mean buying new belts if the diameter of the pulley is too big. The minimum diameter of the pulley (which is in fact a constraint on the number of teeth) is limited by the screws holes position of the motor coupler. 
 
+![Alt text](../images/Manufacturing_images/Motor_pulley.png)
 
 
-## **4. First prototype :** 
-=======
-![Alt text](../images/Manufacturing_images/Metal%20shaft%20coupler%20Drawing%20v3-1.png)
-
-
-## **4. First prototype :** 
-
+### **3.1 One axis bottom :**
 
 As the first prototype purpose is to balance in one axis of freedom, we needed a plate where we could fit the motor, the ESC, the breadboard and the esp8266. **Note that for the first prototype we did all the tests without the battery mounted.**
 
+We printed this part only in PETG and glued some rubber on the bottom to add friction, but if we had had more time we would have printed this as a composite of two materials (See in the section about the balancing stick).
 
 ![Alt text](../images/Manufacturing_images/one_axis_bottom.png)
 
-### **3.2 Motor shaft holder :**
+### **3.2 Motor shaft support :**
 
+The motor shaft support part serves the purpose of preventing excessive tension on the motor shaft while tensioning the belt. By using this part, we can avoid putting undue strain on the motor shaft, reducing the risk of damaging or breaking the motor. Alternatively, one can utilize a threaded rod inserted into the ball bearing of the motor pulley design to achieve the desired belt tension. This method allows for greater flexibility in adjusting the tension without concerns about motor damage.
+
+![Alt text](../images/Manufacturing_images/motor%20shaft%20support%20Drawing%20v1-1.png)
+
+P**lease note that for the two-axis design, we did not use a specific piece for belt tensioning. Initially, this decision was made due to space constraints. However, during testing and experimentation, we discovered that the motor shaft support was not necessary for belt tensioning. Therefore, we found that the motor shaft support could be omitted without compromising the proper tensioning of the belt.**
 
 
 
 
 ### **3.3 reaction wheel support :** 
  
-
 The part here bellow is designed to hold the threaded rod to hold the reaction wheel.
-
-
    
 ![Alt text](../images/Manufacturing_images/Reaction_wheel_support.png)
 
@@ -220,7 +229,11 @@ This part is specifically designed to securely hold the two reactions perpendicu
 
 ![Alt text](../images/Manufacturing_images/TwoAxisWheelHolder-1.png)
 
+### **4.5 The two axis handle :**
 
+Note that this design of the handle is just the same design as the one axis one but with different size.
+
+![Alt text](../images/Manufacturing_images/2%20Axis%20Handle%20Drawing%20v1-1.png)
 
 ## Sources of the images
 
