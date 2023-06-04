@@ -33,6 +33,6 @@ theme:
   name: dracula
   custom_dir: docs/custom-theme/
 
-font:
-  text: Roboto
-  code: Roboto
+  font:
+    text: Roboto
+    code: Roboto
