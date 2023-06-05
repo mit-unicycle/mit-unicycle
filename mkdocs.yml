@@ -17,7 +17,6 @@ nav:
       - Prototype History: 'process/prototypes.md'
       - Challenges Faced: 'process/challenges.md'
       - Future Improvements: 'process/improvements.md'
-      - Conclusion: 'process/conclusion.md'  
       - Thanks: 'process/thanks.md'    
 
 extra_javascript:
