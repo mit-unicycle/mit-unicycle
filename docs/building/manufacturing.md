@@ -235,6 +235,4 @@ Note that this design of the handle is just the same design as the one axis one 
 
 ![Alt text](../images/Manufacturing_images/2%20Axis%20Handle%20Drawing%20v1-1.png)
 
-## Sources of the images
-
 

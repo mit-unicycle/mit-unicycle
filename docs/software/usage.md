@@ -33,7 +33,7 @@ This was a class we created while trying to get the first prototype to work. It 
 
 ## pidautotuner.cpp
 
-This is another class we created while trying to get the prototype to work. We were having lots of problems with the tunning of the gains, so we tried to use an autotuner. In the end, the problem was that the setpoint must had been dynamically shifted. Once we implemented that, it was much easier to find the parameters manually. 
+This is another class we created while trying to get the prototype to work. We were having lots of problems with the tuning of the gains, so we tried to use an auto-tuner. In the end, the problem was that the ESC. Once we changed that, it was much easier to find the parameters manually. 
 
 ## PIDControl.cpp
 
