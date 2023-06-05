@@ -1,4 +1,5 @@
 site_name: CS-358 Self Balancing Robot
+site_url: https://mit-unicycle.github.io/mit-unicycle/
 
 nav:
     - Home: 'index.md'
