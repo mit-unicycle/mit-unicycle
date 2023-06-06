@@ -76,9 +76,10 @@ In brief, the proportional channel will try to close the gap between the SP and 
 Shift the setpoint automatically in by +-0.5 using an LQR algorithm to reduce overshoot and make the system more stable.
 
 The algorithm is as follows:
- - The input and output are averaged over a window of 100 and 50 respectively
- - The output is then converted to a logarithmic scale and constrained
- - The input average is constrained to be within +-0.5 of the original setpoint
- - The setpoint is then calculated by subtracting a multiple of the output from the input and constraining it
+
+- The input and output are averaged over a window of 100 and 50 respectively
+- The output is then converted to a logarithmic scale and constrained
+- The input average is constrained to be within +-0.5 of the original setpoint
+- The setpoint is then calculated by subtracting a multiple of the output from the input and constraining it
 
 This will cause the setpoint to want to drift towards the average tilt angle of the system (setpoint), however the output will try to counteract this drift by pushing the setpoint in the opposite direction (penalizing a high output). Meaning the higher the output, the more the setpoint will be pushed in the opposite direction, and vice versa, causing a dynamic equilibrium towards the real setpoint.
