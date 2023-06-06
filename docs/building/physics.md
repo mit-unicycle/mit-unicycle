@@ -36,5 +36,5 @@ which is why we chose to use a brushless motor and a speed reduction of 7 times.
 ## References
 We used the following papers to fact check our calculations:
 
-- <a href="/pdfs/ResearchGate.pdf" target=”_blank” rel="noopener noreferrer">Researchgate: Design and implementation of a self-balancing robot</a>
-- <a href="/pdfs/KTH.pdf" target="_blank" rel="noopener noreferrer">KTH: Reaction Wheel Stabilized Stick</a>
+- <a href="https://mit-unicycle.github.io/mit-unicycle/pdfs/ResearchGate.pdf" target=”_blank” rel="noopener noreferrer">Researchgate: Design and implementation of a self-balancing robot</a>
+- <a href="https://mit-unicycle.github.io/mit-unicycle/pdfs/KTH.pdf" target="_blank" rel="noopener noreferrer">KTH: Reaction Wheel Stabilized Stick</a>
