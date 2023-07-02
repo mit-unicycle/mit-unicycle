@@ -1,0 +1,397 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+        <title>Controller Explanation - CS-358 Self Balancing Robot</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        
+        <link rel="canonical" href="https://mit-unicycle.github.io/mit-unicycle/software/controller/">
+        
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="../../assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../../assets/css/dracula-ui.css">
+        <link rel="stylesheet" href="../../assets/css/mkdocs.css">
+            <link href="../../css/custom.css" rel="stylesheet">
+            <link href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.css" rel="stylesheet">
+
+        
+            <link  rel="icon" type="image/x-icon" href="../../assets/img/favicon.ico">
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+                <script>hljs.initHighlightingOnLoad();</script>
+
+</head>
+
+<body class="drac-bg-black-secondary drac-text-grey-ternary drac-text drac-scrollbar-purple">
+
+    <main class="d-flex">
+
+        <!-- block sidebar -->
+            <nav id="sidebar" class="sidebar drac-bg-black">
+    <div class="custom-menu">
+        <button type="button" id="sidebarCollapse" class="btn btn-primary">
+            <i class="fa fa-bars"></i>
+            <span class="sr-only">Menu</span>
+        </button>
+    </div>
+
+    <div class="p-4">
+        
+
+        <div class="drac-text-center">
+            
+                <span class="drac-text drac-line-height drac-text-white">CS-358 Self Balancing Robot</span>
+            
+        </div>
+
+        <div class="drac-box flex-column">
+            <ul class="dot-ul">
+                <li><div class="dot-li drac-bg-cyan"></div></li>
+                <li><div class="dot-li drac-bg-green"></div></li>
+                <li><div class="dot-li drac-bg-orange"></div></li>
+                <li><div class="dot-li drac-bg-pink"></div></li>
+                <li><div class="dot-li drac-bg-purple"></div></li>
+                <li><div class="dot-li drac-bg-red"></div></li>
+                <li><div class="dot-li drac-bg-yellow"></div></li>
+            </ul>
+        </div>
+
+        <hr class="drac-divider" />
+
+        <!-- block menu -->
+        <ul class="mb-5 drac-list drac-list-none">
+            
+            <li class="drac-box">
+                <a href="../.."
+                    class="
+                    drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+                    Home
+                </a>
+            </li>
+            <li class="drac-box">
+                <a href="../.."
+                    class="
+                    drac-anchor btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover collapsed"
+                    data-bs-toggle="collapse" data-bs-target="#building-the-prototype-collapse" aria-expanded="false">
+                    Building the Prototype
+                </a>
+                <div class="collapse" id="building-the-prototype-collapse">
+                    <ul class="mb-5 drac-list drac-list-none">
+                            
+    <li class="drac-box-ternary">
+        <a href="../../building/physics/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Underlying Physic
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../building/components/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Components Used
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../building/manufacturing/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Manufacturing
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../building/assembly/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Assembly Instructions
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../building/wiring/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Wiring Instructions
+        </a>
+    </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="drac-box">
+                <a href="../.."
+                    class=" active 
+                    drac-anchor btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover collapsed"
+                    data-bs-toggle="collapse" data-bs-target="#software-instructions-collapse" aria-expanded="false">
+                    Software Instructions
+                </a>
+                <div class="collapse" id="software-instructions-collapse">
+                    <ul class="mb-5 drac-list drac-list-none">
+                            
+    <li class="drac-box-ternary">
+        <a href="./"
+            class=" active 
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Controller Explanation
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../usage/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Software
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../tuning/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Tuning Guide
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../webapp/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Web App
+        </a>
+    </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="drac-box">
+                <a href="../.."
+                    class="
+                    drac-anchor btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover collapsed"
+                    data-bs-toggle="collapse" data-bs-target="#process-collapse" aria-expanded="false">
+                    Process
+                </a>
+                <div class="collapse" id="process-collapse">
+                    <ul class="mb-5 drac-list drac-list-none">
+                            
+    <li class="drac-box-ternary">
+        <a href="../../process/prototypes/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Prototype History
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../process/challenges/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Challenges Faced
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../process/improvements/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Future Improvements
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../process/thanks/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Thanks
+        </a>
+    </li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+        <!-- endblock -->
+    </div>
+</nav>
+        <!-- endblock -->
+
+        <nav class="divider drac-bg-purple-cyan"></nav>
+
+        <div class="content">
+            <!-- block header -->
+                <header>
+    <nav class="navbar navbar-expand-xl drac-bg-purple"">
+        <div class="container-fluid">
+
+            <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsMenu"
+                aria-controls="navbarsMenu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button> -->
+
+            <div class="collapse navbar-collapse flex-column ml-auto" id="navbarsMenu">
+                <ul class="navbar-nav">
+
+                    <!-- block preview -->
+                    <li class="nav-item">
+                            
+        <div class="container">
+            <div class="row row-preview">
+                <div class="col">
+                    <a href="../../building/wiring/"
+                        class="btn-preview drac-btn drac-btn-outline drac-text-white drac-text-cyan-green--hover">
+                        <i class="fa fa-arrow-left"></i> Previous
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="../usage/"
+                        class="btn-preview drac-btn drac-btn-outline drac-text-white drac-text-cyan-green--hover" style="padding-left: 3%;">
+                        Next <i class="fa fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+                    </li>
+                    <!--  endblock -->
+
+                    <!-- block search -->
+                    <li class="nav-item"><div role="search" class="search-box">
+	<form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+		<input type="text" name="q" class="drac-input drac-input-search drac-input-white drac-text-white drac-bg-black-secondary"
+		placeholder="Search docs" title="Type search term here" />
+	</form>
+</div>
+                    </li>
+                    <!--  endblock -->
+
+                    <!-- block source -->
+                    <li class="nav-item">
+                        
+                    </li>
+                    <!--  endblock -->
+
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+</header>
+            <!-- endblock -->
+
+            <!-- block content -->
+                <div class="tl-inner-radius"> 
+    <div></div>
+    <div></div>
+</div>
+<!-- copy/pasted from original dracula theme -->
+<section class="p-md-5 section-content">
+    <article>
+        <p><h1 id="controller-explanation">Controller Explanation</h1>
+<p>To have a better ease of use and comprehension of the software, it is important to understand how the angular speed of the wheel is controlled. </p>
+<h2 id="pid-controller">PID Controller</h2>
+<p>To control the speed of rotation of the wheel, we use control loop called <em>Proportional-Integral-Derivative Controller</em> or <em>PID Controller</em> for short. In the image below, we can see an overview of this controller: </p>
+<p><img alt="PID Controller Overview" src="../../images/pid_diagram.png" /></p>
+<ul>
+<li>$r(t) =$ Setpoint (SP)</li>
+<li>$u(t) =$ Control Variable</li>
+<li>$y(t) =$ Process Variable</li>
+<li>$e(t) =$ Error Variable</li>
+</ul>
+<p>Such a controller works in the following way. First, a <em>setpoint (SP)</em> is chosen. The SP is the desired position that the robot should achieve. In our case, it would correspond to a small roll angle. If the angle is small, it means that the robot is in balance. Note that in an ideal world, the SP would be $0°$. However, since the weight of the robot is not perfectly distributed, the $r(t) \in [-5^{\circ}, 5^{\circ}]$. Later, we will also explain how and why we must adjust the SP dynamically to achieve greater stability.</p>
+<p>Then, the controller computes the <em>error variable</em>:</p>
+<p>$$e(t) = r(t) - y(t)$$</p>
+<p>The error represents how "far" the robot is to the SP. After that, the error variable is passed through three different channels: <em>proportional (P), integral (I) and derivative (D)</em>. Each channel possess a so-called <em>gain</em>: $K_{p}$, $K_{i}$ and $K_{d}$ respectively. These gains are constants defined by the user of the PID controller to determine the effect or "weight" of each channel on the control variable $u(t)$. By doing so, the desired behavior is achieved (see the <a href="../tuning/">Tuning Guide</a>).</p>
+<p>In the P channel, the error variable is simply multiplied by the constant $K_{p}$. In the I channel, the error is integrated w.r.t. time and then multiplied by $K_{i}$. Finally, in the D channel, the error is derived w.r.t. time and then multiplied by $K_{d}$. Thus, the <em>control variable</em> can be expressed as: </p>
+<p>$$u(t) = K_\text{p} e(t) + K_\text{i} \int_0^t e(\tau) \,\mathrm{d}\tau + K_\text{d} \frac{\mathrm{d}e(t)}{\mathrm{d}t}$$</p>
+<p>The control variable is then fed to the motor in the form of a PWM signal or the RPM at which it should spin. Finally, the <em>process variable</em> $y(t)$, in our case, the newly measured angle, is fed back and the new error variable $e(t)$ is computed. Then, the loop begins again. </p>
+<h2 id="understanding-the-effect-of-each-channel">Understanding the Effect of Each Channel</h2>
+<p>Let us examine the effect of each channel to understand how they may help us to achieve a robot that balances itself. </p>
+<p>Suppose that we are only using the <strong>proportional path</strong>, that is $K_{i}$ and $K_{d}$ are set to zero: </p>
+<p>$$u(t) = K_{p}e(t)$$</p>
+<p>Suppose too that the motor must accelerate to a speed of <strong>100 RPM</strong> to counteract the torque exerted by gravity on the robot. Then, by increasing the $K_{p}$, we can decrease the error: </p>
+<table>
+<thead>
+<tr>
+<th>Error $e(t)$</th>
+<th>Gain $K_{p}$</th>
+<th>RPM $u(t)$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>50</td>
+<td>2</td>
+<td>100</td>
+</tr>
+<tr>
+<td>20</td>
+<td>5</td>
+<td>100</td>
+</tr>
+<tr>
+<td>10</td>
+<td>10</td>
+<td>100</td>
+</tr>
+<tr>
+<td>1</td>
+<td>100</td>
+<td>100</td>
+</tr>
+</tbody>
+</table>
+<p>On a first glance, this seems enough. However, looking closely, we notice that no matter how big the $K_{p}$ is set to, there will always be a small error. This particular type of error is often called <em>steady state error</em>, and it is the <strong>integral channel purpose</strong> to eliminate.</p>
+<p>Let us suppose that we set $K_{p} = 20$ and we reduced the error to $e(t) = 5^{\circ}$:</p>
+<p><img alt="Current Situation" src="../../images/current_situation.png" /></p>
+<p>Although the motor is already spinning at 100 RPM, the error $e(t)$ has not yet been reduced to $0^{\circ}$. This is where the <strong>integral channel</strong> comes in. </p>
+<p>Suppose now that the motor holds its position for a few milliseconds with an error of $e(t) = 5^{\circ}$. The integral channel will integrate this constant error w.r.t time and continue adding to the control variable $u(t)$. Thus, the integral channel finishes correcting any error that the proportional channel did not correct. </p>
+<p><img alt="Integrator Channel" src="../../images/integrator.png" /></p>
+<p>Sometimes, it can happen that although the robot is very close to the SP, the integrator still has a positive value. In order to decrease this value, it must overshoot beyond the SP to generate a negative error. </p>
+<p><img alt="Overshoot" src="../../images/overshoot.png" /></p>
+<p>This causes oscillations on the robot, since it needs to constantly overshoot to reduce the integral term. Hence, the final channel comes into play: the <strong>derivative channel</strong>. </p>
+<p>As the name suggests, the channel derives the error w.r.t time. Thus, the controller gains some insight on the <em>rate of change</em> of the error and is then able to "predict" the motion of the robot. </p>
+<p><img alt="Derivative Channel" src="../../images/derivative.png" /></p>
+<p>As the robot approaches the SP, the error decreases and the derivative is then negative. Therefore, when adding all of the channels together, the derivative term will counteract the other channels to adjust the rotational speed in advance. </p>
+<p>In brief, the proportional channel will try to close the gap between the SP and the current position; the integral channel will fix the error that the proportional did not manage to; and finally, the derivative path will counterbalance the other two to help it stabilize faster. In conjunction, the three channels work together to keep the robot in balance. </p>
+<h2 id="dynamic-shifting-of-the-setpoint">Dynamic Shifting of the Setpoint</h2>
+<p>Shift the setpoint automatically in by +-0.5 using an LQR algorithm to reduce overshoot and make the system more stable.</p>
+<p>The algorithm is as follows:</p>
+<ul>
+<li>The input and output are averaged over a window of 100 and 50 respectively</li>
+<li>The output is then converted to a logarithmic scale and constrained</li>
+<li>The input average is constrained to be within +-0.5 of the original setpoint</li>
+<li>The setpoint is then calculated by subtracting a multiple of the output from the input and constraining it</li>
+</ul>
+<p>This will cause the setpoint to want to drift towards the average tilt angle of the system (setpoint), however the output will try to counteract this drift by pushing the setpoint in the opposite direction (penalizing a high output). Meaning the higher the output, the more the setpoint will be pushed in the opposite direction, and vice versa, causing a dynamic equilibrium towards the real setpoint.</p></p>
+    </article>
+</section>
+            <!-- endblock -->
+
+            <!-- block footer -->
+                <footer>
+    <div class="d-flex flex-sm-row justify-content-between py-2 border-top drac-text-black drac-bg-cyan-green">
+        <a href="https://github.com/dracula/mkdocs" target="_blank" style="padding-left: 1%;"
+            class="footer-text drac-anchor drac-text-black drac-text-purple--hover">
+            Made with Dracula Theme for MkDocs
+        </a>
+    </div>
+</footer>
+            <!-- endblock -->
+        </div>
+
+    </main>
+
+        <script>var base_url = '../..';</script>
+        <script src="../../assets/js/jquery-3.3.1.slim.min.js""></script>
+        <script src="../../assets/js/bootstrap.bundle.min.js""></script>
+        <script src="../../assets/js/mkdocs.js""></script>
+			<script src="../../javascript/katex.js" defer></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.js" defer></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/contrib/auto-render.min.js" defer></script>
+			<script src="../../search/main.js" defer></script>
+
+</body>
+
+</html>

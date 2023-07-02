@@ -1,0 +1,508 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+        <title>Manufacturing - CS-358 Self Balancing Robot</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        
+        <link rel="canonical" href="https://mit-unicycle.github.io/mit-unicycle/building/manufacturing/">
+        
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="../../assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../../assets/css/dracula-ui.css">
+        <link rel="stylesheet" href="../../assets/css/mkdocs.css">
+            <link href="../../css/custom.css" rel="stylesheet">
+            <link href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.css" rel="stylesheet">
+
+        
+            <link  rel="icon" type="image/x-icon" href="../../assets/img/favicon.ico">
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+                <script>hljs.initHighlightingOnLoad();</script>
+
+</head>
+
+<body class="drac-bg-black-secondary drac-text-grey-ternary drac-text drac-scrollbar-purple">
+
+    <main class="d-flex">
+
+        <!-- block sidebar -->
+            <nav id="sidebar" class="sidebar drac-bg-black">
+    <div class="custom-menu">
+        <button type="button" id="sidebarCollapse" class="btn btn-primary">
+            <i class="fa fa-bars"></i>
+            <span class="sr-only">Menu</span>
+        </button>
+    </div>
+
+    <div class="p-4">
+        
+
+        <div class="drac-text-center">
+            
+                <span class="drac-text drac-line-height drac-text-white">CS-358 Self Balancing Robot</span>
+            
+        </div>
+
+        <div class="drac-box flex-column">
+            <ul class="dot-ul">
+                <li><div class="dot-li drac-bg-cyan"></div></li>
+                <li><div class="dot-li drac-bg-green"></div></li>
+                <li><div class="dot-li drac-bg-orange"></div></li>
+                <li><div class="dot-li drac-bg-pink"></div></li>
+                <li><div class="dot-li drac-bg-purple"></div></li>
+                <li><div class="dot-li drac-bg-red"></div></li>
+                <li><div class="dot-li drac-bg-yellow"></div></li>
+            </ul>
+        </div>
+
+        <hr class="drac-divider" />
+
+        <!-- block menu -->
+        <ul class="mb-5 drac-list drac-list-none">
+            
+            <li class="drac-box">
+                <a href="../.."
+                    class="
+                    drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+                    Home
+                </a>
+            </li>
+            <li class="drac-box">
+                <a href="../.."
+                    class=" active 
+                    drac-anchor btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover collapsed"
+                    data-bs-toggle="collapse" data-bs-target="#building-the-prototype-collapse" aria-expanded="false">
+                    Building the Prototype
+                </a>
+                <div class="collapse" id="building-the-prototype-collapse">
+                    <ul class="mb-5 drac-list drac-list-none">
+                            
+    <li class="drac-box-ternary">
+        <a href="../physics/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Underlying Physic
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../components/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Components Used
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="./"
+            class=" active 
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Manufacturing
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../assembly/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Assembly Instructions
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../wiring/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Wiring Instructions
+        </a>
+    </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="drac-box">
+                <a href="../.."
+                    class="
+                    drac-anchor btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover collapsed"
+                    data-bs-toggle="collapse" data-bs-target="#software-instructions-collapse" aria-expanded="false">
+                    Software Instructions
+                </a>
+                <div class="collapse" id="software-instructions-collapse">
+                    <ul class="mb-5 drac-list drac-list-none">
+                            
+    <li class="drac-box-ternary">
+        <a href="../../software/controller/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Controller Explanation
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../software/usage/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Software
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../software/tuning/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Tuning Guide
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../software/webapp/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Web App
+        </a>
+    </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="drac-box">
+                <a href="../.."
+                    class="
+                    drac-anchor btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover collapsed"
+                    data-bs-toggle="collapse" data-bs-target="#process-collapse" aria-expanded="false">
+                    Process
+                </a>
+                <div class="collapse" id="process-collapse">
+                    <ul class="mb-5 drac-list drac-list-none">
+                            
+    <li class="drac-box-ternary">
+        <a href="../../process/prototypes/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Prototype History
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../process/challenges/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Challenges Faced
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../process/improvements/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Future Improvements
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../process/thanks/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Thanks
+        </a>
+    </li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+        <!-- endblock -->
+    </div>
+</nav>
+        <!-- endblock -->
+
+        <nav class="divider drac-bg-purple-cyan"></nav>
+
+        <div class="content">
+            <!-- block header -->
+                <header>
+    <nav class="navbar navbar-expand-xl drac-bg-purple"">
+        <div class="container-fluid">
+
+            <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsMenu"
+                aria-controls="navbarsMenu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button> -->
+
+            <div class="collapse navbar-collapse flex-column ml-auto" id="navbarsMenu">
+                <ul class="navbar-nav">
+
+                    <!-- block preview -->
+                    <li class="nav-item">
+                            
+        <div class="container">
+            <div class="row row-preview">
+                <div class="col">
+                    <a href="../components/"
+                        class="btn-preview drac-btn drac-btn-outline drac-text-white drac-text-cyan-green--hover">
+                        <i class="fa fa-arrow-left"></i> Previous
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="../assembly/"
+                        class="btn-preview drac-btn drac-btn-outline drac-text-white drac-text-cyan-green--hover" style="padding-left: 3%;">
+                        Next <i class="fa fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+                    </li>
+                    <!--  endblock -->
+
+                    <!-- block search -->
+                    <li class="nav-item"><div role="search" class="search-box">
+	<form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+		<input type="text" name="q" class="drac-input drac-input-search drac-input-white drac-text-white drac-bg-black-secondary"
+		placeholder="Search docs" title="Type search term here" />
+	</form>
+</div>
+                    </li>
+                    <!--  endblock -->
+
+                    <!-- block source -->
+                    <li class="nav-item">
+                        
+                    </li>
+                    <!--  endblock -->
+
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+</header>
+            <!-- endblock -->
+
+            <!-- block content -->
+                <div class="tl-inner-radius"> 
+    <div></div>
+    <div></div>
+</div>
+<!-- copy/pasted from original dracula theme -->
+<section class="p-md-5 section-content">
+    <article>
+        <p><h1 id="manufacturing"><strong>Manufacturing</strong></h1>
+<h2 id="preliminaries"><strong>Preliminaries</strong></h2>
+<p>In this section you will find the information related to the realization of the 3D designs,the specification about the printing of our parts and the blueprints of the parts. This section will be separated in <strong>3 parts</strong> : the first presenting the parts that can be used for both one and two axis, then the parts specific to the one axis design and finally the parts for the two axis model. For the designs we used <strong>Fusion 360</strong> and <strong>Prusa 3D printers</strong>. Note that every dimension reported on the blueprint are given in <strong>millimeters (mm)</strong>.</p>
+<ol>
+<li>
+<p><strong>Common parts</strong></p>
+<ul>
+<li>1.1 The reaction wheel and the spacers</li>
+<li>1.2 The teethed pulley</li>
+<li>1.3 The motor coupler</li>
+<li>1.4 The motor pulley</li>
+</ul>
+</li>
+<li>
+<p><strong>First prototype</strong></p>
+<ul>
+<li>2.1 Main platform</li>
+<li>2.2 Motor shaft holder</li>
+<li>2.3 Reaction wheel holder</li>
+</ul>
+</li>
+</ol>
+<p>=======</p>
+<ol>
+<li>
+<p><strong>How to design a GT-2 pulley with Fusion 360</strong></p>
+</li>
+<li>
+<p><strong>Common parts :</strong></p>
+<ul>
+<li>
+<p>2.1 The reaction wheel and the spacers</p>
+</li>
+<li>
+<p>2.2 The teethed pulley</p>
+</li>
+<li>
+<p>2.3 The motor coupler</p>
+</li>
+<li>
+<p>2.4 The motor pulley</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>First prototype</strong></p>
+<ul>
+<li>
+<p>3.1 Main platform</p>
+</li>
+<li>
+<p>3.2 Motor shaft holder</p>
+</li>
+<li>
+<p>3.3 Reaction wheel holder</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Second prototype :</strong> </p>
+<ul>
+<li>4.1 Main platform</li>
+<li>
+<p>4.1 Main platform</p>
+</li>
+<li>
+<p>4.2 The Stick </p>
+</li>
+<li>
+<p>4.3 the motor support</p>
+</li>
+<li>
+<p>4.4 the reaction wheel holder </p>
+</li>
+</ul>
+</li>
+</ol>
+<h2 id="how-to-design-a-gt-2-parametric-design-of-a-pulley"><strong>how to design a GT-2 parametric design of a pulley</strong></h2>
+<ul>
+<li><strong>What is a GT-2 pulley ?</strong></li>
+</ul>
+<p>A GT-2 pulley is a type of standard for belts and pulleys, it is defined mostly by the pitch of the teeth and the distance between the edges of two teeth. Here's the description of the parameters we're interested in for designing the teethed pulley.</p>
+<p><img alt="Alt text" src="../../images/Manufacturing_images/belt-tolerence.jpg" /></p>
+<ul>
+<li>
+<p>the parameter R1 correspond to the inner pitch of the teeth of our pulley, we can think about it as if we small circles of this diameter at the same position at both side of one of the pulley's teeth.</p>
+</li>
+<li>
+<p>the parameter R3 correspond to the tooth radius, in the case of the design of the pulley.</p>
+</li>
+<li>
+<p>The parameter P is really important since it is the distance between two teeth (<strong>in mm</strong>). Therefore the diameter is defined by : $$D = \frac{(P*N)}{Pi} $$</p>
+<p>$N$ : The number of teeth (<strong>must</strong> be an integer),</p>
+<p>$D$ : The diameter,</p>
+<p>$P$ : The the distance between two teeth, given by the standards of the pulleys</p>
+</li>
+</ul>
+<p>If we still want to be able to "choose" the diameter, then with basic algebra find the number of teeth needed for the desired diameter:</p>
+<p>$$ N = \frac{D \pi}{P}$$</p>
+<p><strong>To create a parametric design for a GT2 pulley, you can refer to the video tutorial mentioned. It provides a helpful guide to follow and assists in achieving the desired outcome :</strong>
+<strong>To create a parametric design for a GT2 pulley, you can refer to the video tutorial mentioned. It provides a helpful guide to follow and assists in achieving the desired outcome :</strong></p>
+<div style="text-align:center">
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/PDNIiLSTzG4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+</div>
+<div style="text-align:center">
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/PDNIiLSTzG4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+</div>
+
+<h2 id="2-common-parts"><strong>2. Common parts</strong></h2>
+<h3 id="21-the-reaction-wheel-and-the-spacers"><strong>2.1 The reaction wheel and the spacers</strong></h3>
+<ul>
+<li><strong>The reaction wheel</strong></li>
+</ul>
+<p>In order to achieve the maximum moment of inertia for the reaction wheel, our objective was to maximize the diameter of the wheel. Since the moment of inertia is the sum of the squared distances to the mass, the farther the mass is from the axis, the larger the moment will be. However, we faced a constraint due to the size of the printing bed of the printer we used for the distance to the axis.</p>
+<p>Our experimentation demonstrated that a wheel with a thin design could easily break if the model were to fall. This is why the model we have implemented here is highly robust and should not break, provided it is used correctly in the application of this project. <strong>Note that the reaction wheel has 32 holes for the screws used to add weight far from the axis.</strong></p>
+<p><img alt="Alt text" src="../../images/Manufacturing_images/ReactionWheel.png" /></p>
+<p>The most crucial aspect of printing this part is to use an appropriate perimeter setting. Increasing the perimeter setting enables us to reinforce the piece without significantly increasing the infill. It is essential for the holes where we will insert screws, nuts, and the location where the ball bearing will be placed to be sufficiently strong. This ensures that they do not break during rotation or when inserting the ball bearing. Here we used a perimeter of 4 and an infill of :</p>
+<ul>
+<li><strong>The spacers</strong></li>
+</ul>
+<p>As you can observe in the section explaining the assembly of the model, we needed spacers with the same inner diameter as the ball bearing to ensure a good fit between the ball bearings.</p>
+<p>The accompanying design picture, illustrates the dimensions of one of these spacers. <strong>Please note that we used spacers of various sizes, because the length of those depend on the number of spacing plates used, but we are presenting only one blueprint as the only difference lies in the height of the spacers. We used 9mm spacers, but since it's really small parts you can try to print different sized spacers.</strong></p>
+<p><img alt="Alt text" src="../../images/Manufacturing_images/general_spacer.png" /></p>
+<ul>
+<li><strong>The spacing plates :</strong> </li>
+</ul>
+<p>In order to avoid that the belt hits the nuts from the reaction wheel while working, we needed spacer plates to increase the distance between the teethed pulley therefore we designed the spacing plates here bellow is the design and the dimensions of those spacers. we use 2 of them in the model but if needed you try to use more.</p>
+<p><img alt="Alt text" src="../../images/spacing%20plates%20v1-1.png" />
+In order to avoid that the belt hits the nuts from the reaction wheel while working, we needed spacer plates to increase the distance between the teethed pulley therefore we designed the spacing plates here bellow is the design and the dimensions of those spacers. we use 2 of them in the model but if needed you try to use more.</p>
+<p><img alt="Alt text" src="../../images/spacing%20plates%20v1-1.png" /></p>
+<h3 id="22-the-teethed-pulley"><strong>2.2. The teethed pulley</strong></h3>
+<p>We used GT-2 belts, which necessitated the design of GT-2 pulleys. To achieve this, we employed a functionality in <strong>Fusion 360</strong> that enabled us to create parametric designs of the pulleys. This approach facilitated the rapid design of the desired pulley variations and also facilitated testing different gear reduction options. The creation of this design is explained step by steps just bellow</p>
+<p>The GT-2 pulley follows a specific standard for the teeth, which includes the pitch of the teeth on the pulleys and belts. Therefore, the parametric design of <strong>the pulley size depend on the desired number of teeth</strong>. In our specific application, the number of teeth required is determined by the desired gear reduction.</p>
+<p><img alt="Alt text" src="../../images/Manufacturing_images/GT-2_7_reduc_pulley.png" /></p>
+<p>For this particular printing, the most important setting to consider is the <strong>precision</strong>. Given that we are printing pulleys with small teeth, it is essential for the printing to be as accurate and precise as possible. Here we used the option : <strong>10mm Quality</strong> preset from <strong>Prusa Slicer</strong>. To prevent the belt to skip, we need plates to help the belt stay straight in on the pulley, here's the blueprint of those plates : </p>
+<p><img alt="Alt text" src="../../images/Manufacturing_images/GT2_7_REDUCTION_plates%20Drawing%20v1-1.png" /></p>
+<h3 id="23-motor-coupler"><strong>2.3. Motor coupler</strong></h3>
+<p>For the motor coupler, we machined them using the tools available to us. This approach enabled us to create a high-quality coupler specifically designed for the motor we had. We were unable to find any suitable couplers for purchase online that could be delivered within a reasonable time frame, which is why we resorted to machining our own. Here's the blueprint we created for this coupler</p>
+<p><img alt="Alt text" src="../../images/Manufacturing_images/Metal%20shaft%20coupler%20Drawing%20v3-1.png" /></p>
+<h3 id="24-the-motor-pulley"><strong>2.4. The motor pulley :</strong></h3>
+<p>To do the gear reduction we wanted we needed to fix a small teethed pulley to the motor coupler. We needed this pulley to be small enough to avoid printing enormous pulley if we wanted to modify the gears reduction. Increasing the reduction means modifying the height of the reaction wheel it could also mean buying new belts if the diameter of the pulley is too big. The minimum diameter of the pulley (which is in fact a constraint on the number of teeth) is limited by the screws holes position of the motor coupler. </p>
+<p><img alt="Alt text" src="../../images/Manufacturing_images/Motor_pulley.png" /></p>
+<h3 id="31-one-axis-bottom"><strong>3.1 One axis bottom :</strong></h3>
+<p>As the first prototype purpose is to balance in one axis of freedom, we needed a plate where we could fit the motor, the ESC, the breadboard and the esp8266. <strong>Note that for the first prototype we did all the tests without the battery mounted.</strong></p>
+<p>We printed this part only in PETG and glued some rubber on the bottom to add friction, but if we had had more time we would have printed this as a composite of two materials (See in the section about the balancing stick).</p>
+<p><img alt="Alt text" src="../../images/Manufacturing_images/one_axis_bottom.png" /></p>
+<h3 id="32-motor-shaft-support"><strong>3.2 Motor shaft support :</strong></h3>
+<p>The motor shaft support part serves the purpose of preventing excessive tension on the motor shaft while tensioning the belt. By using this part, we can avoid putting undue strain on the motor shaft, reducing the risk of damaging or breaking the motor. Alternatively, one can utilize a threaded rod inserted into the ball bearing of the motor pulley design to achieve the desired belt tension. This method allows for greater flexibility in adjusting the tension without concerns about motor damage.</p>
+<p><img alt="Alt text" src="../../images/Manufacturing_images/motor%20shaft%20support%20Drawing%20v1-1.png" /></p>
+<p>P<strong>lease note that for the two-axis design, we did not use a specific piece for belt tensioning. Initially, this decision was made due to space constraints. However, during testing and experimentation, we discovered that the motor shaft support was not necessary for belt tensioning. Therefore, we found that the motor shaft support could be omitted without compromising the proper tensioning of the belt.</strong></p>
+<h3 id="33-reaction-wheel-support"><strong>3.3 reaction wheel support :</strong></h3>
+<p>The part here bellow is designed to hold the threaded rod to hold the reaction wheel.</p>
+<p><img alt="Alt text" src="../../images/Manufacturing_images/Reaction_wheel_support.png" /></p>
+<h2 id="4-second-prototype"><strong>4. Second prototype :</strong></h2>
+<h3 id="41-main-platform"><strong>4.1 Main platform :</strong></h3>
+<p>The design of the main plate for the two axis prototype, there were two constraint that we <strong>had</strong> to satisfy :</p>
+<ul>
+<li>
+<p>The distance two holes separated by 144 mm (which we'll refer as : the threaded rod holes), which is the distance of the holes in the handle of this prototype. We could easily increase this distance if needed <strong>but</strong>, increasing this distance means that the wheel older becomes bigger and heavier, and increasing the weight at the top too much is something we want to avoid if possible.</p>
+</li>
+<li>
+<p>The place where we'll put the motors, it also depends on the threaded rods holes, since it depends on the "two axis wheel holder". This place is also constrained by the <strong>size</strong> of the motor, since the motors could touch each others.</p>
+</li>
+</ul>
+<p><img alt="Alt text" src="../../images/Manufacturing_images/Main_plate_two_axis_prototype.png" /></p>
+<p>The small marks located next to the inserts for the motor mount are designed to serve as indicators for the motor position. While they are not strictly mandatory, they can be useful for aligning the motors at approximately the same relative position. These marks are more of a helpful guideline rather than a strict requirement. It is up to you whether you choose to include them in the design or not. You have the flexibility to determine the spacing between two of these marks according to your preference or specific needs.</p>
+<h3 id="42-the-stick"><strong>4.2 The Stick :</strong></h3>
+<p>This part is the stick that serves the purpose of balancing the model. Although the design itself is relatively simple, the printing process presents a unique aspect. We encountered an issue where balancing on a stick made solely from PETG plastic was not viable due to its lack of grip, which would complicate the balancing process. Consequently, we devised a solution to print the stick using a combination of two materials. The upper part of the stick is printed using PETG plastic, while the half sphere at the end of the stick is printed using TPU plastic. We opted for TPU plastic because it is commonly used for tire prototypes, which offers improved grip properties.</p>
+<p>To achieve the composition of materials, we programmed a color change during the print process where we intended to switch to the TPU filament. Due to the difference in density between TPU and PETG, we had to make slight adjustments to the printer's head positioning to meet the specific requirements for printing TPU with Prusa printers.</p>
+<p><img alt="Alt text" src="../../images/Manufacturing_images/stick%20Drawing%20v1-1.png" /></p>
+<p><strong>Note that in order to achieve a desirable texture with the TPU material, we utilized the following specific parameters (ONLY for the TPU part):</strong></p>
+<ul>
+<li>Fill density : 10% </li>
+<li>Fill pattern : Gyroid</li>
+<li>Bottom solid layers : 5</li>
+<li>Perimeters : 2</li>
+<li>Top solid layers : 4</li>
+</ul>
+<p><strong>Considering that this is a small print, leaving the top solid layer unaltered would have reTosulted in a denser and less flexible top portion. By modifying the top solid layer, we were able to achieve the desired level of flexibility and meet our specific requirements for the print.</strong></p>
+<h3 id="43-the-motor-support"><strong>4.3 The Motor Support :</strong></h3>
+<p>The design of the motor support for this project is largely similar to the one used for the single-axis prototype. However, there are a few notable differences. Firstly, the holes used for attaching the motor support to the plate are positioned closer together in this design. Additionally, the base of the motor support is narrower. This modification was made to ensure that the wheel holder and the handle could remain compact, as increasing their size was something we aimed to avoid.</p>
+<p><img alt="Alt text" src="../../images/Manufacturing_images/Motor_mount_two_axis.png" /></p>
+<h3 id="44-the-reaction-wheel-holder"><strong>4.4 The reaction wheel holder :</strong></h3>
+<p>This part is specifically designed to securely hold the two reactions perpendicularly, while minimizing the distance between both wheels. The goal is to make the model as compact as possible. There are two designated positions for threaded rods vertically, which serve to connect this part with the main plate. Additionally, two other holes are provided for threaded rods to be inserted perpendicular to the part, enabling them to hold the reaction wheel in place.</p>
+<p><img alt="Alt text" src="../../images/Manufacturing_images/TwoAxisWheelHolder-1.png" /></p>
+<h3 id="45-the-two-axis-handle"><strong>4.5 The two axis handle :</strong></h3>
+<p>Note that this design of the handle is just the same design as the one axis one but with different size.</p>
+<p><img alt="Alt text" src="../../images/Manufacturing_images/2%20Axis%20Handle%20Drawing%20v1-1.png" /></p></p>
+    </article>
+</section>
+            <!-- endblock -->
+
+            <!-- block footer -->
+                <footer>
+    <div class="d-flex flex-sm-row justify-content-between py-2 border-top drac-text-black drac-bg-cyan-green">
+        <a href="https://github.com/dracula/mkdocs" target="_blank" style="padding-left: 1%;"
+            class="footer-text drac-anchor drac-text-black drac-text-purple--hover">
+            Made with Dracula Theme for MkDocs
+        </a>
+    </div>
+</footer>
+            <!-- endblock -->
+        </div>
+
+    </main>
+
+        <script>var base_url = '../..';</script>
+        <script src="../../assets/js/jquery-3.3.1.slim.min.js""></script>
+        <script src="../../assets/js/bootstrap.bundle.min.js""></script>
+        <script src="../../assets/js/mkdocs.js""></script>
+			<script src="../../javascript/katex.js" defer></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.js" defer></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/contrib/auto-render.min.js" defer></script>
+			<script src="../../search/main.js" defer></script>
+
+</body>
+
+</html>

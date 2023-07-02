@@ -1,0 +1,406 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+        <title>CS-358 Self Balancing Robot</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <meta name="description" content="None">
+        <link rel="canonical" href="https://mit-unicycle.github.io/mit-unicycle/">
+        
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/css/dracula-ui.css">
+        <link rel="stylesheet" href="assets/css/mkdocs.css">
+            <link href="css/custom.css" rel="stylesheet">
+            <link href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.css" rel="stylesheet">
+
+        
+            <link  rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+                <script>hljs.initHighlightingOnLoad();</script>
+
+</head>
+
+<body class="drac-bg-black-secondary drac-text-grey-ternary drac-text drac-scrollbar-purple">
+
+    <main class="d-flex">
+
+        <!-- block sidebar -->
+            <nav id="sidebar" class="sidebar drac-bg-black">
+    <div class="custom-menu">
+        <button type="button" id="sidebarCollapse" class="btn btn-primary">
+            <i class="fa fa-bars"></i>
+            <span class="sr-only">Menu</span>
+        </button>
+    </div>
+
+    <div class="p-4">
+        
+
+        <div class="drac-text-center">
+            
+                <span class="drac-text drac-line-height drac-text-white">CS-358 Self Balancing Robot</span>
+            
+        </div>
+
+        <div class="drac-box flex-column">
+            <ul class="dot-ul">
+                <li><div class="dot-li drac-bg-cyan"></div></li>
+                <li><div class="dot-li drac-bg-green"></div></li>
+                <li><div class="dot-li drac-bg-orange"></div></li>
+                <li><div class="dot-li drac-bg-pink"></div></li>
+                <li><div class="dot-li drac-bg-purple"></div></li>
+                <li><div class="dot-li drac-bg-red"></div></li>
+                <li><div class="dot-li drac-bg-yellow"></div></li>
+            </ul>
+        </div>
+
+        <hr class="drac-divider" />
+
+        <!-- block menu -->
+        <ul class="mb-5 drac-list drac-list-none">
+            
+            <li class="drac-box">
+                <a href="."
+                    class=" active 
+                    drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+                    Home
+                </a>
+            </li>
+            <li class="drac-box">
+                <a href="."
+                    class="
+                    drac-anchor btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover collapsed"
+                    data-bs-toggle="collapse" data-bs-target="#building-the-prototype-collapse" aria-expanded="false">
+                    Building the Prototype
+                </a>
+                <div class="collapse" id="building-the-prototype-collapse">
+                    <ul class="mb-5 drac-list drac-list-none">
+                            
+    <li class="drac-box-ternary">
+        <a href="building/physics/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Underlying Physic
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="building/components/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Components Used
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="building/manufacturing/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Manufacturing
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="building/assembly/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Assembly Instructions
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="building/wiring/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Wiring Instructions
+        </a>
+    </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="drac-box">
+                <a href="."
+                    class="
+                    drac-anchor btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover collapsed"
+                    data-bs-toggle="collapse" data-bs-target="#software-instructions-collapse" aria-expanded="false">
+                    Software Instructions
+                </a>
+                <div class="collapse" id="software-instructions-collapse">
+                    <ul class="mb-5 drac-list drac-list-none">
+                            
+    <li class="drac-box-ternary">
+        <a href="software/controller/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Controller Explanation
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="software/usage/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Software
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="software/tuning/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Tuning Guide
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="software/webapp/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Web App
+        </a>
+    </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="drac-box">
+                <a href="."
+                    class="
+                    drac-anchor btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover collapsed"
+                    data-bs-toggle="collapse" data-bs-target="#process-collapse" aria-expanded="false">
+                    Process
+                </a>
+                <div class="collapse" id="process-collapse">
+                    <ul class="mb-5 drac-list drac-list-none">
+                            
+    <li class="drac-box-ternary">
+        <a href="process/prototypes/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Prototype History
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="process/challenges/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Challenges Faced
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="process/improvements/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Future Improvements
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="process/thanks/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Thanks
+        </a>
+    </li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+        <!-- endblock -->
+    </div>
+</nav>
+        <!-- endblock -->
+
+        <nav class="divider drac-bg-purple-cyan"></nav>
+
+        <div class="content">
+            <!-- block header -->
+                <header>
+    <nav class="navbar navbar-expand-xl drac-bg-purple"">
+        <div class="container-fluid">
+
+            <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsMenu"
+                aria-controls="navbarsMenu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button> -->
+
+            <div class="collapse navbar-collapse flex-column ml-auto" id="navbarsMenu">
+                <ul class="navbar-nav">
+
+                    <!-- block preview -->
+                    <li class="nav-item">
+                            
+        <div class="container">
+            <div class="row row-preview">
+                <div class="col">
+                    <a 
+                        class="btn-preview drac-btn drac-text-white--hover disabled">
+                        <i class="fa fa-arrow-left"></i> Previous
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="building/physics/"
+                        class="btn-preview drac-btn drac-btn-outline drac-text-white drac-text-cyan-green--hover" style="padding-left: 3%;">
+                        Next <i class="fa fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+                    </li>
+                    <!--  endblock -->
+
+                    <!-- block search -->
+                    <li class="nav-item"><div role="search" class="search-box">
+	<form id="rtd-search-form" class="wy-form" action="./search.html" method="get">
+		<input type="text" name="q" class="drac-input drac-input-search drac-input-white drac-text-white drac-bg-black-secondary"
+		placeholder="Search docs" title="Type search term here" />
+	</form>
+</div>
+                    </li>
+                    <!--  endblock -->
+
+                    <!-- block source -->
+                    <li class="nav-item">
+                        
+                    </li>
+                    <!--  endblock -->
+
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+</header>
+            <!-- endblock -->
+
+            <!-- block content -->
+                <div class="tl-inner-radius"> 
+    <div></div>
+    <div></div>
+</div>
+<!-- copy/pasted from original dracula theme -->
+<section class="p-md-5 section-content">
+    <article>
+        <p><h1 id="reaction-wheel-robot-project">Reaction Wheel Robot Project</h1>
+<h2 id="introduction">Introduction</h2>
+<section class="introduction">
+    Welcome to the EPFL Reaction Wheel Robot Project which was realized by a team of 5 Computer Science students during the 2023 summer semester and took 8 weeks from start to finish. 
+    Through this complete documentation, we will guide you through the manufacturing and software development process of the robot. <br><br>
+    You can find all of the code and the CAD designs we used here: <a href="https://github.com/mit-unicycle ">github.com/mit-unicycle</a> </br>
+    Here are the Notion Pages we used to store information: 
+        <a href="https://summer-espadrille-b76.notion.site/Items-to-buy-a39584837b4b4c01937789933fe2feb7" target="_blank">Items to buy</a> ,
+        <a href="https://summer-espadrille-b76.notion.site/373cf709cd534d39bf88407b930a165b?v=a52da7a304df4a25abab6df019da81b1" target="_blank">Design</a> , 
+        <a href="https://summer-espadrille-b76.notion.site/b2048f4cb776428da3f5c4c3cff9b32a?v=64331302bfdf44a6abfef367b66ab922" target="_blank">Setup guides</a> <br><br>
+    Team members:
+        <a href="https://people.epfl.ch/bruno.lazarinisigg" target="_blank">Bruno Lazarini Sigg</a>, 
+        <a href="https://www.linkedin.com/in/david-farah-21803724a" target="_blank">David Farah</a>, 
+        <a href="https://www.linkedin.com/in/vladdancau" target="_blank">Vlad Dancau</a>, 
+        <a href="https://people.epfl.ch/adrien.deschenaux" target="_blank">Adrien Jean Deschenaux</a>, 
+        <a href="https://people.epfl.ch/yohan.abehssera" target="_blank">Yohan Max Abehssera</a> <br>
+</section>
+
+<h2 id="motivation">Motivation</h2>
+<p>The motivation behind the EPFL Reaction Wheel Robot Project stems from our fascination with robotic systems and the desire to explore the principles of balance and stabilization. 
+By constructing a robot that relies on reaction wheels, we aim to delve into the underlying physics and engineering concepts involved in maintaining stability.</p>
+<p>Our project presents a unique opportunity to combine theoretical knowledge with hands-on experience in robotics. 
+We believe that understanding the intricate interplay between mechanics, electronics, and software is crucial 
+for tackling complex real-world challenges in the field.</p>
+<p>Furthermore, by documenting our journey, we hope to contribute to the growing body of knowledge and inspire others to explore similar projects.
+We aim to provide clear instructions, explanations, and insights that empower individuals to embark on their own robotic endeavors.</p>
+<h2 id="project-description">Project Description</h2>
+<p>Our goal is to build a robot that can stabilize itself using reaction wheels. 
+Our original milestones were:</p>
+<ol>
+<li>Build a prototype with <strong>only one axis of freedom</strong>. It allows us to learn how to make it work and experiment.</li></li>
+<li>Build a prototype with <strong>2 axis of freedom and 2 reaction wheels</strong>. It should be able to balance on a single point of contact with the ground.</li></li>
+<li>Add a wheel on the bottom that would allow it to move.</li>
+</ol>
+<p>Although, due to issues we will discuss further and the lack of time, we couldn't complete all of them.</p>
+<section class="images">
+    <div class="image_container">
+        <img src="images/Home_page/oneaxis_centered.png" alt="one axis">
+    </div>
+    <div class="image_container">
+        <img src="images/Home_page/twoaxis_centered.jpg" alt="two axis">
+    </div>
+</section>
+
+<h2 id="technical-overview">Technical Overview</h2>
+<p>In order to balance a such a device, we must apply <strong>real-time corrections</strong> to the tilt of the system. How are we going to produce the necessary force required to stabilize the robot? </p>
+<p>The answer is by using <strong>reaction wheels</strong>. A reaction wheel is a type of flywheel used primarily by spacecraft for attitude control without using fuel for rockets or other reaction devices. 
+They are particularly useful when the spacecraft must be rotated by very small amounts, such as keeping a telescope pointed at a star, as they can <strong>generate a torque</strong> that can be precisely controlled.</p>
+<p>The project can be broken down into three main categories: </p>
+<ul>
+<li><strong>Mechanical components and structure</strong></li>
+<li><strong>Electronics</strong> (ESC, actuator, gyroscope/accelerometer, microcontroller, ...)</li>
+<li><strong>Software</strong> (Controller, FSM, fusion algorithms for angle, Filters, ...)</li>
+</ul>
+<p>In this documentation, we will explain how we built each one of them as well as the problems we faced and their solutions.</p>
+<h2 id="videos">Videos</h2>
+<section class="videos">
+    <iframe src="https://www.youtube.com/embed/pNNj_DhVxd4?rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <iframe src="https://www.youtube.com/embed/wxip89MBbew?rel=0" title="Self-balancing Robot on Two Axes" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</section>
+
+<h2 id="challenges-and-recommendations">Challenges and Recommendations</h2>
+<p>When we decided on this project, we didn't think we would encounter so many challenges. But it turned out to be a lot more difficult than we expected.
+If you would like to try and build a similar robot, we hope that this section will help you avoid the same mistakes we made and help make it easier. </p>
+<p>Here are some general rules of thumb:</p>
+<ul>
+<li><strong>The lighter the better</strong>. The more mass you add, the harder it will be to balance the robot, and the power you need grows rapidly. This brings a lot of complications: heat, size, vibrations, mechanical complexity, power draw, structural integrity to name a few.</li>
+<li>If you can't find affordable <strong>brushless options</strong> such as the <strong>Nidec24H</strong> or <strong>Gimball motors</strong> which have integrated controllers and position sensors, then go with brushed motors. They will be <strong>much</strong> cheaper and easier to control.</li>
+<li>If you do chose a brushless route, be sure to get a <strong>sensored setup</strong> and do <strong>not to cheap out on the ESC</strong>, as it is the most important part of the build. We recommend not getting a "black box" ESC like we did at first by using an RC car's ESC, because we couldn't control the motor accurately which set us back 4 weeks with lots of frustration.</li>
+<li>If you can <strong>avoid mechanical complexity</strong> such as belts, gears, and pulleys, do so. They add a lot of failing points, vibrations, noise and friction which make everything harder. But be sure your motor has enough <strong>torque</strong> for your system before ruling them out.</li>
+<li>Be sure your <strong>processor is fast enough</strong> for the task and your <strong>IMU functions correctly</strong> under all circumstances before proceeding with the build.</li>
+</ul>
+<p>You can read more about the challenges we had on the <a href="process/challenges">Challenges page</a>.</p>
+<h2 id="safety-considerations">Safety Considerations</h2>
+<p>The project involves working with mechanical components, electronics, and software. 
+It is important to be aware of potential hazards and take necessary precautions to ensure the safety of individuals involved in the project. 
+Below are some safety considerations and the safety measures implemented.</p>
+<ul>
+<li><strong>Hardware measures</strong>, such as covers for fingers, protection for the flywheel to prevent it from hitting the ground while spinning, and a handle to make the robot easier to hold while tuning</li>
+<li><strong>Software measures</strong>, such as a safety angle threshold that disables the motor once a certain angle is reached, a physical button that allows us to rapidly disable it (we are using the flash button), and limitations to the max RPM of the motors</li>
+</ul>
+<h2 id="conclusion">Conclusion</h2>
+<p>In summary, the completion of this ambitious eight-week project marks a significant milestone in our journey, even if we did not manage to make the two axes robot fully balance due to the lack of time. As we reflect on the challenges encountered throughout the process, including the instability of angle measurements, the meticulous and time-consuming tuning of the PID controller, and occasional conflicts arising from different opinions, we recognize the invaluable lessons learned and the growth we have achieved as a team.</p>
+<p>Undoubtedly, numerous late nights were dedicated to refining and perfecting our self-balancing robot. There were moments of uncertainty when the success seemed uncertain. Although this project was a very difficult one, in the end, we pushed through with determination and managed to get a robot that balances itself. The feeling of seeing the result of countless hours of work cannot be expressed in words </p>
+<p>Moreover, beyond the technical accomplishments, this project helped us develop on a personal and professional level. The collaborative nature of this project encouraged us to work in team, allowing us to appreciate the importance of communication and cooperation. We gained hands-on experience in various areas, from using CAD software, learning the operation of mechanical tools, and using technologies like 3D printing and laser cutting to bring our ideas to life. Not only that, but we also improved our programming skills and gained some insight into the field of robotics.</p>
+<p>In conclusion, we proudly present this self-balancing robot as a testament to our dedication, hard work, and determination. It is with great satisfaction and gratification that we look back on the solved challenges and the knowledge acquired during the process. We hope that this project, will serve as an inspiration to future students in IC. We encourage them to embark on the CS-358 course, which wil help them develop skills on the many fields mentioned.</p></p>
+    </article>
+</section>
+            <!-- endblock -->
+
+            <!-- block footer -->
+                <footer>
+    <div class="d-flex flex-sm-row justify-content-between py-2 border-top drac-text-black drac-bg-cyan-green">
+        <a href="https://github.com/dracula/mkdocs" target="_blank" style="padding-left: 1%;"
+            class="footer-text drac-anchor drac-text-black drac-text-purple--hover">
+            Made with Dracula Theme for MkDocs
+        </a>
+    </div>
+</footer>
+            <!-- endblock -->
+        </div>
+
+    </main>
+
+        <script>var base_url = '.';</script>
+        <script src="assets/js/jquery-3.3.1.slim.min.js""></script>
+        <script src="assets/js/bootstrap.bundle.min.js""></script>
+        <script src="assets/js/mkdocs.js""></script>
+			<script src="javascript/katex.js" defer></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.js" defer></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/contrib/auto-render.min.js" defer></script>
+			<script src="search/main.js" defer></script>
+
+</body>
+
+</html>
